@@ -1,4 +1,4 @@
-# ArcGIS Pro Visual Studio Code Debugger Extension
+# ArcGIS Pro Debugger Extension for Visual Studio Code
 
 ![esri_logo](https://github.com/user-attachments/assets/7bcc0bc8-25b3-442a-9920-f8d364870e9b)
 
