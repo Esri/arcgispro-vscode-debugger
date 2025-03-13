@@ -2,6 +2,9 @@
 
 ![esri_logo](https://github.com/user-attachments/assets/7bcc0bc8-25b3-442a-9920-f8d364870e9b)
 
+> [!IMPORTANT]
+> This extension is designed for ArcGIS Pro 3.5, which will release mid-2025. This extension will be avaialble
+> on the VS Code Marketplace at the same time as the Pro release.
 
 ## About the Extension
 
