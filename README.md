@@ -72,7 +72,7 @@ Debug your scripts on your own machine as you develop your script tool.
     2. Choose **Python: Select Interpreter**
     3. Select the currently active ArcGIS Python interpreter from the dropdown  
 
-    **NOTE:** You can alternatively click the **Python** icon in the bottom right of VSC to select the interpreter.  
+    **NOTE:** You can alternatively click the **Python** element in the bottom right of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
 6. **Open the Debug Console**: 
@@ -205,7 +205,7 @@ by the extension.
     2. Choose Python: Select Interpreter
     3. Select the currently active ArcGIS Python interpreter (of the remote machine) from the dropdown  
 
-    **NOTE:** You can alternatively click the Python icon in the bottom right of VSC to select the interpreter.  
+    **NOTE:** You can alternatively click the **Python** element in the bottom right of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the Package Manager in ArcGIS Pro _on the remote machine_ to determine the active environment.  
 10. **Open the Debug Console**: 
