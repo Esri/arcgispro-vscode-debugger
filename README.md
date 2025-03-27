@@ -135,12 +135,10 @@ Debug your script tool while it is running on another machine (of your coworker,
     3. Run the following code:
     ``` python
     import debugpy
-    debugpy.configure(python=r"<path\to\active-env\python.exe>")
+    debugpy.configure(python=os.path.join(sys.prefix, "python.exe"))
     debugpy.listen(<port>)
-    ```  
-
-    **NOTE:** Replace `<path\to\active-env\python.exe>` with the path to the active Python interpreter.  
-
+    ```
+    
     **NOTE:** Replace `<port>` with an open port, for example, try `5678`.  
 
     **NOTE:** If successful, you should see something like `('123.0.0.4', 5678)` printed to the output. **IMPORTANT:** This is not the same as the IP address obtained earlier.  
