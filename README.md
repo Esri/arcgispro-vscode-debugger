@@ -259,9 +259,9 @@ Python code in the script tool validation is embedded in the tool and needs to b
     ``` python
     import os
     import sys
-    import validation_code
 
     sys.path.append(os.getcwd())  # directory containing module must be added to `sys.path`
+    import validation_code
 
     # the following code will reload the val.py module if it's modified
     if 'validation_code' in sys.modules:
