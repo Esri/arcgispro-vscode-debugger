@@ -134,7 +134,7 @@ Debug your script tool while it is running on another machine (of your coworker,
     2. Open the Python Window  
     3. Run the following code:
     ``` python
-    import debugpy
+    import os, debugpy
     debugpy.configure(python=os.path.join(sys.prefix, "python.exe"))
     debugpy.listen(<port>)
     ```
