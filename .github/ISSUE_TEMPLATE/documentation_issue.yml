@@ -23,7 +23,7 @@ body:
       placeholder: "The documentation is missing/unclear about..."
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: expected-content
     attributes:
       label: "Expected Content"
@@ -31,7 +31,7 @@ body:
       placeholder: "I expect..."
     validations:
       required: false
-  - type: input
+  - type: textarea
     id: actual-content
     attributes:
       label: "Actual Content"
