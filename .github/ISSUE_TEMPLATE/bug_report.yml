@@ -3,8 +3,8 @@ description: Create a report to help us improve
 title: "[Bug]: "
 body:
   - type: markdown
-  - attributes:
-      value: "TEST"
+      attributes:
+         value: "TEST"
   - type: textarea
     id: describe-the-bug
     attributes:
