@@ -53,7 +53,7 @@ body:
     id: arcgispro-version
     attributes:
       label: ArcGIS Pro info
-      description: Please run the following in ArcGIS Pro Python Window: `import arcpy; arcpy.GetInstallInfo()`, and paste the result below.
+      description: "Please run the following in ArcGIS Pro Python Window: `import arcpy; arcpy.GetInstallInfo()`, and paste the result below."
       placeholder: {'LicenseLevel': 'Advanced', ...
     validations:
       required: true
