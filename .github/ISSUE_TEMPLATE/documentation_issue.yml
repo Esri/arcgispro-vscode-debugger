@@ -13,6 +13,7 @@ body:
       label: Section
       description: "Specify the section of the documentation where the issue is found."
       placeholder: "e.g., Installation, Local Debugging, etc."
+    validations:
       required: true
   - type: textarea
     id: issue-description
@@ -20,6 +21,7 @@ body:
       label: "Issue Description"
       description: "Provide a detailed description of the issue."
       placeholder: "The documentation is missing/unclear about..."
+    validations:
       required: true
   - type: input
     id: expected-content
@@ -27,6 +29,7 @@ body:
       label: "Expected Content"
       description: "Describe what you expected to find in the documentation."
       placeholder: "I expect..."
+    validations:
       required: false
   - type: input
     id: actual-content
@@ -34,6 +37,7 @@ body:
       label: "Actual Content"
       description: "Provide the actual content that is currently in the documentation."
       placeholder: "e.g. copy and paste content from https://github.com/Esri/arcgispro-vscode-debugger"
+    validations:
       required: false
   - type: textarea
     id: suggestions
@@ -41,4 +45,5 @@ body:
       label: "Suggestions"
       description: "Provide any suggestions for improving the documentation."
       placeholder: "I suggest..."
+    validations:
       required: false
