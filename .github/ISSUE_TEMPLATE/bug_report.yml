@@ -4,7 +4,7 @@ title: "[Bug]: "
 body:
   - type: markdown
     attributes:
-      value: "TEST"
+      value: "Report a problem to help us improve"
   - type: textarea
     id: describe-the-bug
     attributes:
