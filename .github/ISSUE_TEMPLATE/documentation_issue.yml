@@ -1,6 +1,6 @@
 name: Documentation Issue
 description: "Report an issue with the project's documentation."
-title: "[Documentation]: "
+title: "[DOC]: "
 labels: ["documentation"]
 type: "task"
 body:
