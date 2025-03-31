@@ -1,0 +1,44 @@
+name: Documentation Issue
+description: "Report an issue with the project's documentation."
+title: "[Documentation]: "
+labels: ["documentation"]
+type: "task"
+body:
+  - type: markdown
+    attributes:
+      value: "Please describe the issue with the documentation"
+  - type: input
+    id: documentation-section
+    attributes:
+      label: Section
+      description: "Specify the section of the documentation where the issue is found."
+      placeholder: "e.g., Installation, Local Debugging, etc."
+      required: true
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: "Issue Description"
+      description: "Provide a detailed description of the issue."
+      placeholder: "The documentation is missing/unclear about..."
+      required: true
+  - type: input
+    id: expected-content
+    attributes:
+      label: "Expected Content"
+      description: "Describe what you expected to find in the documentation."
+      placeholder: "I expect..."
+      required: false
+  - type: input
+    id: actual-content
+    attributes:
+      label: "Actual Content"
+      description: "Provide the actual content that is currently in the documentation."
+      placeholder: "e.g. copy and paste content from https://github.com/Esri/arcgispro-vscode-debugger"
+      required: false
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: "Suggestions"
+      description: "Provide any suggestions for improving the documentation."
+      placeholder: "I suggest..."
+      required: false
