@@ -1,0 +1,48 @@
+name: Feature Request
+description: Suggest an idea for this project
+title: "[ENH]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Suggest an idea for this project"
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Describe the problem"
+      description: "Clear and concise description of what the problem is"
+      placeholder: |
+        I'm always frustrated when ...
+
+        If applicable, add screenshots to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Describe the solution you'd like"
+      description: "A clear and concise description of what you want to happen"
+      placeholder: |
+        I suggest...
+
+        If applicable, add screenshots or mockups to illustrate.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative-solutions
+    attributes:
+      label: "Describe alternatives you've considered"
+      description: "A clear and concise description of any alternative solutions or workarounds you've considered."
+      placeholder: |
+        Other possible solutions include...
+
+        If applicable, add screenshots or mockups to illustrate.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional context
+      description: Include as much additional information as possible, such related issues, etc. Anything that might be relevant.
+      placeholder: Also...
+    validations:
+      required: false
