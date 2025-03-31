@@ -1,0 +1,61 @@
+name: Bug Report
+description: Create a report to help us improve
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "TEST"
+  - type: textarea
+    id: describe-the-bug
+    attributes:
+      label: Describe the bug
+      description: Clear and concise description of the bug
+      placeholder: A bug happened...
+    validations:
+      required: true
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the bug.
+      value: |
+       1. Go to ...
+       2. Click on ...
+       3. Scroll down to ...
+       4. See error
+
+       If applicable, add screenshots to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: I expected...
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional context
+      description: Include as much additional information as possible, such related issues, etc. Anything that might be relevant.
+      placeholder: Also...
+    validations:
+      required: false
+  - type: input
+    id: debugger-version
+    attributes:
+      label: ArcGIS Pro Debugger extension version
+      description: Version of ArcGIS Pro Debugger extension where this issue was seen.
+      placeholder: Ex 1.1.17
+    validations:
+      required: true
+  - type: input
+    id: arcgispro-version
+    attributes:
+      label: ArcGIS Pro info
+      description: "Please run the following in ArcGIS Pro Python Window: `import arcpy; arcpy.GetInstallInfo()`, and paste the result below."
+      placeholder: "{'LicenseLevel': ..., ... }"
+    validations:
+      required: true
