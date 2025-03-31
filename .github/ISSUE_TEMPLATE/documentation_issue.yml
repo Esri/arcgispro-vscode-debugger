@@ -36,7 +36,7 @@ body:
     attributes:
       label: "Actual Content"
       description: "Provide the actual content that is currently in the documentation."
-      placeholder: "e.g. copy and paste content from the documentation."
+      placeholder: "e.g. copy and paste the relevant excerpt from the documentation."
     validations:
       required: false
   - type: textarea
