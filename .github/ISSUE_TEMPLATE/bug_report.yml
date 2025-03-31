@@ -10,7 +10,10 @@ body:
     attributes:
       label: Describe the bug
       description: Clear and concise description of the bug
-      placeholder: A bug happened...
+      placeholder: |
+        A bug happened...
+
+        If applicable, add screenshots to help explain your problem.
     validations:
       required: true
   - type: textarea
@@ -18,7 +21,7 @@ body:
     attributes:
       label: To Reproduce
       description: Steps to reproduce the bug.
-      value: |
+      placeholder: |
        1. Go to ...
        2. Click on ...
        3. Scroll down to ...
