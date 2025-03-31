@@ -36,7 +36,7 @@ body:
     attributes:
       label: "Actual Content"
       description: "Provide the actual content that is currently in the documentation."
-      placeholder: "e.g. copy and paste content from https://github.com/Esri/arcgispro-vscode-debugger"
+      placeholder: "e.g. copy and paste content from the documentation."
     validations:
       required: false
   - type: textarea
