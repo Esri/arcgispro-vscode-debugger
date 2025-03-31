@@ -3,6 +3,7 @@ description: Create a report to help us improve
 title: "[Bug]: "
 body:
   - type: markdown
+  - attributes:
   - type: textarea
     id: describe-the-bug
     attributes:
