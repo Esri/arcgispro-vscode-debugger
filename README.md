@@ -26,7 +26,7 @@ script tools for ArcGIS Pro.
    You can do this by using the **Command Palette** (Ctrl+Shift+P or Cmd+Shift+P) and selecting **Developer: Reload Window**.  
 
     **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (right).  
-    ![image](https://github.com/user-attachments/assets/dfebe000-e7f6-4b3b-8acb-0db263c616a7)
+    ![image](https://github.com/user-attachments/assets/bc52f17a-fe0e-42e6-b9d7-4f3f74dd8f99)  
 
 ## ArcGIS Pro Debug mode
 
