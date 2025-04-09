@@ -32,17 +32,17 @@ script tools for ArcGIS Pro.
 
 The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your main point of entry into controlling the ArcGIS Pro Debugger. 
 
-Hovering over the status bar reveals at-a-glance details about the current status of the debugger.
+Hovering over the status bar icon reveals at-a-glance details about the current status of the debugger.
 
-![image](https://github.com/user-attachments/assets/751df7a4-9377-4f0c-be09-2cf1af5d3536)
+![image](https://github.com/user-attachments/assets/81ff0d17-f8d3-4ef0-9711-28b222bd7b81)
 
-- **Debug Mode** indicates whether the [ArcGIS Pro Debug Mode](#arcgis-pro-debug-mode) is currently on.
-- **Attachment Mode** indicates what the current [Attachment Mode](#attachment-mode) is.
 - Click the **help** link on the top-right to get to the GitHub repository page you are reading from now.
+- **Debug Mode** indicates whether the [ArcGIS Pro Debug Mode](#arcgis-pro-debug-mode) is currently **On** or **Off**.
+- **Attachment Mode** indicates whether the [Attachment Mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to when attached.
 
 Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSC).
 
-![image](https://github.com/user-attachments/assets/64f7cba4-f38b-46f7-aac2-d05290e7f3b6)
+![image](https://github.com/user-attachments/assets/ae422651-b799-43cd-83d4-5a80f567865a)
 
 ## ArcGIS Pro Debug mode
 
