@@ -30,7 +30,9 @@ script tools for ArcGIS Pro.
 
 ## Getting around
 
-The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your main point of entry into controlling the ArcGIS Pro Debugger. 
+The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your main point of entry into controlling the ArcGIS Pro Debugger.
+
+![image](https://github.com/user-attachments/assets/1c6e2457-7748-439d-93bf-969765a177cf)
 
 Hovering over the status bar icon reveals at-a-glance details about the current status of the debugger.
 
