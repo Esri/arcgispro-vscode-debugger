@@ -23,10 +23,26 @@ script tools for ArcGIS Pro.
 
 1. Install the latest ArcGIS Pro Debugger extension from the VSC **Marketplace**:  
 2. After the extension is installed, you may need to reload Visual Studio Code to activate the extension.  
-   You can do this by using the **Command Palette** (Ctrl+Shift+P or Cmd+Shift+P) and selecting **Developer: Reload Window**.  
+   You can do this by using the **Command Palette** (Ctrl+Shift+P) and selecting **Developer: Reload Window**.  
 
-    **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (right).  
+    **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (bottom-right of VSC).  
     ![image](https://github.com/user-attachments/assets/bc52f17a-fe0e-42e6-b9d7-4f3f74dd8f99)  
+
+## Getting around
+
+The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your main point of entry into controlling the ArcGIS Pro Debugger. 
+
+Hovering over the status bar reveals at-a-glance details about the current status of the debugger.
+
+![image](https://github.com/user-attachments/assets/751df7a4-9377-4f0c-be09-2cf1af5d3536)
+
+- **Debug Mode** indicates whether the [ArcGIS Pro Debug Mode](#arcgis-pro-debug-mode) is currently on.
+- **Attachment Mode** indicates what the current [Attachment Mode](#attachment-mode) is.
+- Click the **help** link on the top-right to get to the GitHub repository page you are reading from now.
+
+Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSC).
+
+![image](https://github.com/user-attachments/assets/64f7cba4-f38b-46f7-aac2-d05290e7f3b6)
 
 ## ArcGIS Pro Debug mode
 
@@ -46,6 +62,8 @@ script tools for ArcGIS Pro.
        **NOTE:** Attaching to ArcGIS Pro will fail when "OFF".
 
        **NOTE:** While "ON", you may notice a decrease in performance of ArcGIS Pro. We recommend always setting to "OFF" when you are done debugging.
+
+## Attachment Mode
 
 ## Local Debugging
 
