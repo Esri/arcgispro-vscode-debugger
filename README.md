@@ -1,4 +1,4 @@
-# ArcGIS Pro Debugger Extension for Visual Studio Code
+![image](https://github.com/user-attachments/assets/c657b2c9-4e71-4aaf-9df7-f6e2800c5140)# ArcGIS Pro Debugger Extension for Visual Studio Code
 
 ![esri_logo](https://github.com/user-attachments/assets/7bcc0bc8-25b3-442a-9920-f8d364870e9b)
 
@@ -53,21 +53,22 @@ Debug your scripts on your own machine as you develop your script tool.
 >    - ArcGIS Pro Debugger
 > - Requires ArcGIS Pro >= 3.5
 
-1. **Open VSC**
-2. **Open your project folder in VSC**:  
+1. **Open your script tool in ArcGIS Pro**:
+    1. Open your ArcGIS Pro project (.aprx)
+    2. Open the tool you are debugging
+2. **Open VSC**
+3. **Open your project folder in VSC**:  
     1. From the menu select **File** > **Open Folder**  
 
     **NOTE:** This will generate a `.vscode` folder in that workspace (if it is not already there). This folder will be populated with settings injected by the extension.  
 
     **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.  
-4. **Open your script tool in ArcGIS Pro**:
-    1. Open your ArcGIS Pro project (.aprx)
-    2. Open the tool you are debugging
-5. **Open your script**: 
-    1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.  
+4. **Open your script in VSC and set breakpoints**: 
+    1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
+    2. Set breakpoints as needed.
 
     **NOTE:** For script tools (`.atbx`), some additional setup might be required to [debug execution code](#debug-script-tool-execution-code) or [validation code](#debug-script-tool-validation-code). No additional setup is required for python toolboxes (`.pyt`).
-3. **Set Python interpreter**:
+5. **Set Python interpreter**:
     1. Press `Ctrl+Shift+P` to open the command palette
     2. Choose **Python: Select Interpreter**
     3. Select the currently active ArcGIS Python interpreter from the dropdown  
@@ -75,11 +76,17 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
-6. **Open the Debug Console**: 
+8. **Set ArcGIS Debug Mode to ON**
+    1. Press `Ctrl+Shift+P` to open the command palette
+    2. Choose **ArcGIS Pro Debugger: set ArcGIS Pro Debug Mode** and select **ON**.  
+
+   **NOTE:** The ArcGIS Pro icon in the status bar will now have a checkmark bubble indicating that ArcGIS Pro Debug mode is on, and the tooltip will show Debug Mode: On.  
+   ![image](https://github.com/user-attachments/assets/efb6751e-a187-4393-9fc3-0c538a12bfbb)
+7. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
     **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here.  
-7. **Attach to a running ArcGIS Pro instance using process ID**:  
+8. **Attach to a running ArcGIS Pro instance using process ID**:  
     1. Press `Ctrl+Shift+P` to open the command pallette
     2. Run the command **ArcGIS Pro Debugger: Attach Debugger to ArcGIS Pro**
     3. Select the ArcGIS Pro process from the dropdown  
@@ -92,7 +99,7 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail (more precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** item in the status bar to perform this action.
-8. **Debugging your script**:  
+9. **Debugging your script**:  
     1. Run the `.atbx` or `.pyt` script from ArcGIS Pro. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
 ## Remote Debugging
