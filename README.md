@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c657b2c9-4e71-4aaf-9df7-f6e2800c5140)# ArcGIS Pro Debugger Extension for Visual Studio Code
+# ArcGIS Pro Debugger Extension for Visual Studio Code
 
 ![esri_logo](https://github.com/user-attachments/assets/7bcc0bc8-25b3-442a-9920-f8d364870e9b)
 
@@ -28,7 +28,7 @@ script tools for ArcGIS Pro.
     **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (right).  
     ![image](https://github.com/user-attachments/assets/dfebe000-e7f6-4b3b-8acb-0db263c616a7)
 
-## Enable ArcGIS Pro Debug mode
+## ArcGIS Pro Debug mode
 
 > [!IMPORTANT]  
 > The ArcGIS Pro Debug Mode must be enabled in order to successfully attach to ArcGIS Pro.
@@ -37,8 +37,11 @@ script tools for ArcGIS Pro.
 2. **Enable or Disable ArcGIS Pro Debug Mode**
     1. Press `Ctrl+Shift+P` to open the command pallette
     2. Run the command **ArcGIS Pro Debugger: Set ArcGIS Pro Debug Mode**
-    3. Select **"ON"** if starting a new debugging session  
+    3. Select **"ON"** if starting a new debugging session.  
        Select **"OFF"** if ending an existing debug session  
+
+       **NOTE:** A checkmark bubble on the ArcGIS Pro icon in the status bar indicates the debug mode is currently **ON**. You can also use the hover tooltip to confirm the current state.  
+       ![image](https://github.com/user-attachments/assets/c657b2c9-4e71-4aaf-9df7-f6e2800c5140)  
 
        **NOTE:** Attaching to ArcGIS Pro will fail when "OFF".
 
@@ -76,7 +79,7 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
-8. **Set ArcGIS Debug Mode to ON**
+68. **Set ArcGIS Debug Mode to ON**
     1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
 7. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
