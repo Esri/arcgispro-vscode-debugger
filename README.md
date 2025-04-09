@@ -38,7 +38,7 @@ script tools for ArcGIS Pro.
     1. Press `Ctrl+Shift+P` to open the command pallette
     2. Run the command **ArcGIS Pro Debugger: Set ArcGIS Pro Debug Mode**
     3. Select **"ON"** if starting a new debugging session.  
-       Select **"OFF"** if ending an existing debug session  
+       Select **"OFF"** if ending an existing debug session.  
 
        **NOTE:** A checkmark bubble on the ArcGIS Pro icon in the status bar indicates the debug mode is currently **ON**. You can also use the hover tooltip to confirm the current state.  
        ![image](https://github.com/user-attachments/assets/c657b2c9-4e71-4aaf-9df7-f6e2800c5140)  
