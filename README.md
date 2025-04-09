@@ -77,11 +77,7 @@ Debug your scripts on your own machine as you develop your script tool.
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
 8. **Set ArcGIS Debug Mode to ON**
-    1. Press `Ctrl+Shift+P` to open the command palette
-    2. Choose **ArcGIS Pro Debugger: set ArcGIS Pro Debug Mode** and select **ON**.  
-
-   **NOTE:** The ArcGIS Pro icon in the status bar will now have a checkmark bubble indicating that ArcGIS Pro Debug mode is on, and the tooltip will show Debug Mode: On.  
-   ![image](https://github.com/user-attachments/assets/efb6751e-a187-4393-9fc3-0c538a12bfbb)
+    1. See [Enable ArcGIS Pro Debug mode](enable-arcgis-pro-debug-mode)
 7. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
