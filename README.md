@@ -260,7 +260,7 @@ Python code in the script tool validation is embedded in the tool and needs to b
     import os
     import sys
 
-    sys.path.append(os.getcwd())  # directory containing module must be added to `sys.path`
+    sys.path.append(os.getcwd())  # directory containing module must be in `sys.path`
     import validation_code
 
     # the following code will reload the val.py module if it's modified
