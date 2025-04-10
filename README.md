@@ -202,31 +202,26 @@ Debug your script tool while it is running on another machine (of your coworker,
        **NOTE:** The default configuration is **Attach using Process ID**, this is recommended for local debugging. For remote debugging, **Attach using Port** is recommended.
 6. **Add an SSH host (skip if this was already done previously):**  
     _On the local machine_  
-    1. Press `Ctrl+Shift+P` to open the command palette  
-    2. Select **ArcGIS Pro Debugger: Remote Development**  
+    1. Click the ArcGIS Pro status bar icon and select **Remote Development**  
     3. Select **Add New SSH Host...**
     4. Enter the host name or IP address noted earlier and press enter
     5. Choose an option for how SSH host configuration is stored (select first option if unsure)  
-
-    **NOTE:** Once connected, you will see SSH: <hostname/IP> on the lower left of the status bar. You can now open and edit scripts remotely.  
-
-    **NOTE:** Alternatively, you can also click on the ArcGIS Pro Debugger in the status bar to perform this action.  
 7. **Make an SSH connection:**  
     _On the local machine_  
-    1. Press `Ctrl+Shift+P` to open the command palette  
-    2. Select **ArcGIS Pro Debugger: Remote Development**  
+    1. Click the ArcGIS Pro status bar icon and select **Remote Development**  
     3. Select the remote machine from the list  
     4. Select the remote machine operating system from the list  
 
-    **NOTE:** A separate VSC instance may open, continue there with all steps going forward  
+    **NOTE:** A separate VSC instance may open, _**continue there with all steps going forward**_  
     5. Enter the password and press enter  
 
-    **NOTE:** This instance (window) of VSC is now accessing the remote machine.  
+    **NOTE:** Once connected, you will see SSH: <hostname/IP> on the lower left of the status bar. This instance (window) of VSC is now accessing the remote machine. You can open and edit scripts on your remote machine from the **Explorer** tab.  
 8. **Ensure all necessary components are installed on remote machine**  
     _On the local machine_  
     1. Click the Extensions tab and make sure the ArcGIS Pro Debugger extension components are installed on the SSH host  
 
-    **NOTE:** From the Extensions tab you will see extensions installed on the remote machine. This tab will also show you extensions that are missing on the remote machine, make sure the required extensions are installed on the remote machine before proceeding (refer to the list of required extensions provided earlier). For the ArcGIS Pro Debugger extension item in the list, you may have to click on the **Install in SSH:<hostname/IP>** to install required components.  
+    **NOTE:** From the Extensions tab you will see extensions installed on the remote machine under the **SSH: \<hostname/IP> - INSTALLED** section. This tab will also show you extensions that are missing on the remote machine, make sure the required extensions are installed on the remote machine before proceeding (refer to the list of required extensions provided earlier). For the ArcGIS Pro Debugger extension item in the list, you may have to click on the **Install in SSH: \<hostname/IP>** to install required components. Make sure the versions match between the local and remote machines.
+    ![image](https://github.com/user-attachments/assets/8cbac9e1-d4f0-4e21-bbc7-cc1fbe39dd15)   
 9. **Open the remote project folder**:  
     _On the local machine_  
     **NOTE: You may skip this step if you already have a folder opened  
