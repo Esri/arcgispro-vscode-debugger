@@ -325,7 +325,7 @@ Python code in the script tool validation is embedded in the tool and needs to b
     ToolValidator = validation_code.ToolValidator
     ```
 4. Continue debugging using the validation_code.py file.
-5. When you are done debugging, replace the contents of the code editor in the tool properties dialog Validation tab with those of your Python file (validation_code.py in the sample code).
+5. When you are done debugging, replace the contents of the code editor in the tool properties dialog Validation tab with those of your Python file (validation_code.py in the sample code) i.e. return things to their original state.
 
 ## Troubleshooting
 
