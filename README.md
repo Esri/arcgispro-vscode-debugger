@@ -81,7 +81,10 @@ The attachment mode configures the ArcGIS Pro debugger extension to attach using
 2. **Set the Attachment Mode**
     1. Click the ArcGIS Pro status bar icon and select **Set Attachment Mode**
     2. Select **"Process ID"** if attaching using process id (default). Use this for local debugging.
-    4. Select **"Port"** if attaching using port. Use this for remote debugging. 
+    4. Select **"Port"** if attaching using port. Use this for remote debugging.
+  
+       **NOTE:** When attached, the hover tooltip of the ArcGIS Pro status icon will additionally show the process or port attached to:
+       ![image](https://github.com/user-attachments/assets/f2322a4e-77e9-4572-ae08-cb2bde727dde)
 
 > [!IMPORTANT]
 > When attaching to ArcGIS Pro, the Python interpreter must first be initialized (a geoprocessing tool, the Python Window, 
@@ -139,6 +142,7 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** You will see attaching messages appear in the **Debugger Console**.  
 
     **NOTE:** Once attached, the **Debug Toolbar** should appear with a socket icon indicating that you are attached and debugging.  
+    ![image](https://github.com/user-attachments/assets/80488db9-31ba-4e11-878c-8de1aad2f924) 
 
     **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail. See [If the extension fails to attach to ArcGIS Pro](#if-the-extension-fails-to-attach-to-arcgis-pro) for more details.
 12. **Debugging your script**:  
