@@ -51,6 +51,8 @@ Clicking the ArcGIS Pro Debugger item in the status bar will reveal available co
 - **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
 - **Set ArcGIS Pro Debug Mode**: Set the [ArcGIS Pro debug mode](#arcgis-pro-debug-mode) to either **On** or **Off**.
 
+You can alternatively reach these commands from the command palette by pressing `Ctrl+Shift+P` and searching for the command by name. Tip: Each command is prepended by **ArcGIS Pro Debugger**; You can list all relevant commands by using **ArcGIS Pro Debugger** as the search term.
+
 ## ArcGIS Pro Debug mode
 
 > [!IMPORTANT]  
@@ -58,7 +60,7 @@ Clicking the ArcGIS Pro Debugger item in the status bar will reveal available co
 
 1. **Open VSC**
 2. **Enable or Disable ArcGIS Pro Debug Mode**
-    1. Press `Ctrl+Shift+P` to open the command pallette
+    1. Press `Ctrl+Shift+P` to open the command palette
     2. Run the command **ArcGIS Pro Debugger: Set ArcGIS Pro Debug Mode**
     3. Select **"ON"** if starting a new debugging session.  
        Select **"OFF"** if ending an existing debug session.  
@@ -111,7 +113,7 @@ Debug your scripts on your own machine as you develop your script tool.
 
     **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here.  
 8. **Attach to a running ArcGIS Pro instance using process ID**:  
-    1. Press `Ctrl+Shift+P` to open the command pallette
+    1. Press `Ctrl+Shift+P` to open the command palette
     2. Run the command **ArcGIS Pro Debugger: Attach Debugger to ArcGIS Pro**
     3. Select the ArcGIS Pro process from the dropdown  
     4. If you have multiple workspaces open in the Explorer tab, select the current workspace from the dropdown list.  
