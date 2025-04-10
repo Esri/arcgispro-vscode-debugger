@@ -126,7 +126,7 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
-6. **Set ArcGIS Debug Mode to ON**
+6. **Set ArcGIS Debug Mode to "ON"**
     1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
 7. **Set Attachment Mode to Process ID**
     1. See [Attachment Mode](#attachment-mode)
@@ -196,7 +196,7 @@ Debug your script tool while it is running on another machine (of your coworker,
 
     **NOTE:** If successful, you should see something like `('123.0.0.4', 5678)` printed to the output. **IMPORTANT:** This is not the same as the IP address obtained earlier.  
 4. **Open VSC** _on the local machine_
-5. **Set Attachment Mode to Port**
+5. **Set Attachment Mode to "Port"**
     1. See [Attachment Mode](#attachment-mode)
 
        **NOTE:** The default configuration is **Attach using Process ID**, this is recommended for local debugging. For remote debugging, **Attach using Port** is recommended.
