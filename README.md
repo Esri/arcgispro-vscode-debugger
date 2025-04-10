@@ -215,13 +215,13 @@ Debug your script tool while it is running on another machine (of your coworker,
     **NOTE:** A separate VSC instance may open, _**continue there with all steps going forward**_  
     5. Enter the password and press enter  
 
-    **NOTE:** Once connected, you will see SSH: <hostname/IP> on the lower left of the status bar. This instance (window) of VSC is now accessing the remote machine. You can open and edit scripts on your remote machine from the **Explorer** tab.  
+    **NOTE:** Once connected, you will see SSH: <hostname/IP> on the lower left of the status bar. This instance (window) of VSC is now accessing the remote machine.  
 8. **Ensure all necessary components are installed on remote machine**  
     _On the local machine_  
     1. Click the Extensions tab and make sure the ArcGIS Pro Debugger extension components are installed on the SSH host  
 
     **NOTE:** From the Extensions tab you will see extensions installed on the remote machine under the **SSH: \<hostname/IP> - INSTALLED** section. This tab will also show you extensions that are missing on the remote machine, make sure the required extensions are installed on the remote machine before proceeding (refer to the list of required extensions provided earlier). For the ArcGIS Pro Debugger extension item in the list, you may have to click on the **Install in SSH: \<hostname/IP>** to install required components. Make sure the versions match between the local and remote machines.
-    ![image](https://github.com/user-attachments/assets/8cbac9e1-d4f0-4e21-bbc7-cc1fbe39dd15)   
+    ![image](https://github.com/user-attachments/assets/e3033916-a123-4b4c-b240-a2d1818fdc59)  
 9. **Open the remote project folder**:  
     _On the local machine_  
     **NOTE: You may skip this step if you already have a folder opened  
@@ -229,9 +229,10 @@ Debug your script tool while it is running on another machine (of your coworker,
 
     **NOTE:** The drop-down list shows folders on the remote machine  
     2. Select the project folder containing the scripts you want to debug 
-    3. If prompted, re-enter the password  
+    3. If prompted, re-enter the password
+    4. If prompted, decide whether you trust the workspace and proceed accordingly
 
-    **NOTE:** From the **Explorer** tab you will see the directory tree of the remote machine. You can now open and edit scripts remotely.  
+    **NOTE:** From the **Explorer** tab you will see the directory tree of the remote machine. You can open and edit scripts remotely.  
 
     **NOTE:** This will generate a `.vscode` folder in that workspace (if it is not already there). This folder will be populated with settings injected 
 by the extension.  
