@@ -39,12 +39,17 @@ Hovering over the status bar icon reveals at-a-glance details about the current 
 ![image](https://github.com/user-attachments/assets/81ff0d17-f8d3-4ef0-9711-28b222bd7b81)
 
 - Click the **help** link on the top-right to get to the GitHub repository page you are reading from now.
-- **Debug Mode** indicates whether the [ArcGIS Pro Debug Mode](#arcgis-pro-debug-mode) is currently **On** or **Off**.
-- **Attachment Mode** indicates whether the [Attachment Mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to when attached.
+- **Debug Mode**: Indicates whether the [ArcGIS Pro debug mode](#arcgis-pro-debug-mode) is currently **On** or **Off**.
+- **Attachment Mode**: Indicates whether the [attachment mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to when attached.
 
 Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSC).
 
 ![image](https://github.com/user-attachments/assets/ae422651-b799-43cd-83d4-5a80f567865a)
+
+- **Attach Debugger to ArcGIS Pro**: Attach the debugger to ArcGIS Pro. See [local debugging](#local-debugging) and [remote debugging](#remote-debugging) for usage.
+- **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
+- **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
+- **Set ArcGIS Pro Debug Mode**: Set the [ArcGIS Pro debug mode](#arcgis-pro-debug-mode) to either **On** or **Off**.
 
 ## ArcGIS Pro Debug mode
 
