@@ -196,13 +196,10 @@ Debug your script tool while it is running on another machine (of your coworker,
 
     **NOTE:** If successful, you should see something like `('123.0.0.4', 5678)` printed to the output. **IMPORTANT:** This is not the same as the IP address obtained earlier.  
 4. **Open VSC** _on the local machine_
-5. **Select the attachment mode:**  
-    _On the local machine_  
-    1. Press `Ctrl+Shift+P` to open the command palette  
-    2. Select **ArcGIS Pro Debugger: Set Attachment Mode**  
-    3. Choose **Attach using Port**  
+5. **Set Attachment Mode to Port**
+    1. See [Attachment Mode](#attachment-mode)
 
-    **NOTE:** The default configuration is **Attach using Process ID**, this is recommended for local debugging. For remote debugging, **Attach using Port** is recommended.
+       **NOTE:** The default configuration is **Attach using Process ID**, this is recommended for local debugging. For remote debugging, **Attach using Port** is recommended.
 6. **Add an SSH host (skip if this was already done previously):**  
     _On the local machine_  
     1. Press `Ctrl+Shift+P` to open the command palette  
@@ -230,7 +227,7 @@ Debug your script tool while it is running on another machine (of your coworker,
     1. Click the Extensions tab and make sure the ArcGIS Pro Debugger extension components are installed on the SSH host  
 
     **NOTE:** From the Extensions tab you will see extensions installed on the remote machine. This tab will also show you extensions that are missing on the remote machine, make sure the required extensions are installed on the remote machine before proceeding (refer to the list of required extensions provided earlier). For the ArcGIS Pro Debugger extension item in the list, you may have to click on the **Install in SSH:<hostname/IP>** to install required components.  
-7. **Open the remote project folder**:  
+9. **Open the remote project folder**:  
     _On the local machine_  
     **NOTE: You may skip this step if you already have a folder opened  
     1. From the menu select File > Open Folder. You can alternatively do this from the **Explorer** tab.  
@@ -245,12 +242,12 @@ Debug your script tool while it is running on another machine (of your coworker,
 by the extension.  
 
     **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.  
-8. **Open your script**:  
+10. **Open your script**:  
     _On the local machine_  
     1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.  
 
     **NOTE:** For script tools (`.atbx`), some additional setup might be required _on the remote machine_ to [debug execution code](#debug-script-tool-execution-code) or [validation code](#debug-script-tool-validation-code). No additional setup is required for python toolboxes (`.pyt`).  
-9. **Set Python interpreter**:  
+11. **Set Python interpreter**:  
     _On the local machine_  
     1. Press `Ctrl+Shift+P` to open the command palette
     2. Choose Python: Select Interpreter
@@ -259,13 +256,13 @@ by the extension.
     **NOTE:** You can alternatively click the **Python** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the Package Manager in ArcGIS Pro _on the remote machine_ to determine the active environment.  
-10. **Open the Debug Console**: 
+12. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
     **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here.  
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
-12. **Attach to a running ArcGIS Pro instance using a debug port**:  
+13. **Attach to a running ArcGIS Pro instance using a debug port**:  
     _On the local machine_  
     1. Press `Ctrl+Shift+P` to open the command palette
     2. Run the command **ArcGIS Pro Debugger: Attach Debugger to ArcGIS Pro**
