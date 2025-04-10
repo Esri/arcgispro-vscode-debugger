@@ -126,7 +126,7 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
-6. **Set ArcGIS Debug Mode to "ON"**
+6. **Set ArcGIS Debug Mode to "ON"**:
     1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
 7. **Set Attachment Mode to Process ID**
     1. See [Attachment Mode](#attachment-mode)
@@ -196,7 +196,7 @@ Debug your script tool while it is running on another machine (of your coworker,
 
     **NOTE:** If successful, you should see something like `('123.0.0.4', 5678)` printed to the output. **IMPORTANT:** This is not the same as the IP address obtained earlier.  
 4. **Open VSC** _on the local machine_
-5. **Set Attachment Mode to "Port"**
+5. **Set Attachment Mode to "Port"**:
     1. See [Attachment Mode](#attachment-mode)
 
        **NOTE:** The default configuration is **Attach using Process ID**, this is recommended for local debugging. For remote debugging, **Attach using Port** is recommended.
@@ -240,7 +240,8 @@ by the extension.
     **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.  
 10. **Open your script**:  
     _On the local machine_  
-    1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.  
+    1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
+    2. Set breakpoints as needed.
 
     **NOTE:** For script tools (`.atbx`), some additional setup might be required _on the remote machine_ to [debug execution code](#debug-script-tool-execution-code) or [validation code](#debug-script-tool-validation-code). No additional setup is required for python toolboxes (`.pyt`).  
 11. **Set Python interpreter**:  
@@ -251,39 +252,38 @@ by the extension.
 
     **NOTE:** You can alternatively click the **Python** element in the status bar (bottom) of VSC to select the interpreter.  
 
-    **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the Package Manager in ArcGIS Pro _on the remote machine_ to determine the active environment.  
-12. **Open the Debug Console**: 
+    **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the Package Manager in ArcGIS Pro _on the remote machine_ to determine the active environment.
+12. **Set ArcGIS Debug Mode to "ON"**:
+    1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
+13. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
     **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here.  
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
-13. **Attach to a running ArcGIS Pro instance using a debug port**:  
+14. **Attach to a running ArcGIS Pro instance using the debug port**:  
     _On the local machine_  
-    1. Press `Ctrl+Shift+P` to open the command palette
-    2. Run the command **ArcGIS Pro Debugger: Attach Debugger to ArcGIS Pro**
-    3. Enter the port number you chose in an earlier step  
-    4. If you have multiple workspaces open in the Explorer tab, select the current workspace from the dropdown list.  
+    1. Click the ArcGIS Pro status bar icon and select **Attach Debugger to ArcGIS Pro**  
+    2. Enter the port number you chose in an earlier step  
+    3. If you have multiple workspaces open in the Explorer tab, select the current workspace from the dropdown list  
 
-    **NOTE:** You should begin to see messages appear in the debug console. Once successfully attached, the debug toolbar should appear with a socket icon indicating that you are attached and debugging.  
+    **NOTE:** Once successfully attached, the debug toolbar should appear with a socket icon indicating that you are attached and debugging.  
 
     **NOTE:** Once attached, the **Debug Toolbar** should appear with a socket icon indicating that you are attached and debugging.  
+    ![image](https://github.com/user-attachments/assets/80488db9-31ba-4e11-878c-8de1aad2f924)  
 
-    **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail (more precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)
+    **NOTE:** Attaching will fail if the Python environment has not been initialized in ArcGIS Pro, as there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm). If you followed the steps above, the interpreter will have already been initialized when you opened the Python Window.
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
-14. **Run your script tool in ArcGIS Pro**:  
+15. **Run your script tool in ArcGIS Pro**:  
     _On the remote machine_  
     1. Open the tool you are debugging  
     2. Run the tool
 
-    **NOTE:** Execution of the tool will stop when a breakpoint is hit, in the UI _on the remote machine_ it will appear to have paused.  
-15. **Debugging your script**:  
+    **NOTE:** Execution of the tool will stop when a breakpoint is hit, in the UI _on the remote machine_ it will appear to have gotten stuck.  
+16. **Debugging your script**:  
     _On the local machine_  
     1. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
-
-    **Note**: For `.pyt` scripts, specifically within the `execute` function, you will need `arcpy.SetupDebugger()` to trigger breakpoints. Injecting these will automatically be set up and torn down by the debugger when connecting and disconnecting.  
-
 
 ## Debug Script Tool Execution Code
 
