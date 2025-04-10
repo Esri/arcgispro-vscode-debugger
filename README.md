@@ -122,15 +122,16 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
-68. **Set ArcGIS Debug Mode to ON**
+6. **Set ArcGIS Debug Mode to ON**
     1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
-7. **Open the Debug Console**: 
+7. **Set Attachment Mode to Process ID**
+    1. See [Attachment Mode](#attachment-mode)
+9. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
-    **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here.  
-8. **Attach to a running ArcGIS Pro instance using process ID**:  
-    1. Press `Ctrl+Shift+P` to open the command palette
-    2. Run the command **ArcGIS Pro Debugger: Attach Debugger to ArcGIS Pro**
+    **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here
+10. **Attach to a running ArcGIS Pro instance using process ID**:  
+    1. Click the ArcGIS Pro status bar icon and select **Attach Debugger to ArcGIS Pro**
     3. Select the ArcGIS Pro process from the dropdown  
     4. If you have multiple workspaces open in the Explorer tab, select the current workspace from the dropdown list.  
 
@@ -138,10 +139,8 @@ Debug your scripts on your own machine as you develop your script tool.
 
     **NOTE:** Once attached, the **Debug Toolbar** should appear with a socket icon indicating that you are attached and debugging.  
 
-    **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail (more precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)
-
-    **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** item in the status bar to perform this action.
-9. **Debugging your script**:  
+    **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail. See [If the extension fails to attach to ArcGIS Pro](#if-the-extension-fails-to-attach-to-arcgis-pro) for more details.
+11. **Debugging your script**:  
     1. Run the `.atbx` or `.pyt` script from ArcGIS Pro. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
 ## Remote Debugging
@@ -332,7 +331,7 @@ The extension fails to attach to ArcGIS Pro with the following error message:
 
 This can happen if Python has not yet initialized in ArcGIS Pro, or the previous session was improperly disconnected. Try these:  
 * **Make sure Python has initialized:**  
-   In ArcGIS Pro, Python loads as needed (when a geoprocessing tool, the Python Window, or a notebook are opened). The debugger will not be able to attach until Python has initialized.
+   In ArcGIS Pro, Python loads as needed (when a geoprocessing tool, the Python Window, or a notebook are opened). The debugger will not be able to attach until Python has initialized. More precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm for more information on Python initailization.
    1. Open the tool you are debugging, then try attaching again  
    
    **NOTE:** Opening any geoprocessing tool will cause Python to initialize. Alternatively, open either the Python Window or a Notebook.
