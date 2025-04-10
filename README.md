@@ -90,6 +90,7 @@ The attachment mode configures the ArcGIS Pro debugger extension to attach using
 > [!IMPORTANT]
 > When attaching using **Port**, the listening port must first be set on the remote Python process.
 > See [remote debugging](#remote-debugging) for detailed steps.
+
 ## Local Debugging
 
 Debug your scripts on your own machine as you develop your script tool.
@@ -140,7 +141,7 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** Once attached, the **Debug Toolbar** should appear with a socket icon indicating that you are attached and debugging.  
 
     **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail. See [If the extension fails to attach to ArcGIS Pro](#if-the-extension-fails-to-attach-to-arcgis-pro) for more details.
-11. **Debugging your script**:  
+12. **Debugging your script**:  
     1. Run the `.atbx` or `.pyt` script from ArcGIS Pro. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
 ## Remote Debugging
