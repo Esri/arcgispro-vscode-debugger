@@ -55,13 +55,14 @@ You can alternatively reach these commands from the command palette by pressing 
 
 ## ArcGIS Pro Debug mode
 
+ArcGIS Pro debug mode configures ArcGIS Pro for debugging.
+
 > [!IMPORTANT]  
-> The ArcGIS Pro Debug Mode must be enabled in order to successfully attach to ArcGIS Pro.
+> The ArcGIS Pro debug mode must be enabled in order to successfully attach to ArcGIS Pro.
 
 1. **Open VSC**
 2. **Enable or Disable ArcGIS Pro Debug Mode**
-    1. Press `Ctrl+Shift+P` to open the command palette
-    2. Run the command **ArcGIS Pro Debugger: Set ArcGIS Pro Debug Mode**
+    1. Click the ArcGIS Pro status bar icon and select **Set ArcGIS Pro Debug Mode**
     3. Select **"ON"** if starting a new debugging session.  
        Select **"OFF"** if ending an existing debug session.  
 
@@ -74,6 +75,21 @@ You can alternatively reach these commands from the command palette by pressing 
 
 ## Attachment Mode
 
+The attachment mode configures the ArcGIS Pro debugger extension to attach using either a process id or a port.
+
+1. **Open VSC**
+2. **Set the Attachment Mode**
+    1. Click the ArcGIS Pro status bar icon and select **Set Attachment Mode**
+    2. Select **"Process ID"** if attaching using process id (default). Use this for local debugging.
+    4. Select **"Port"** if attaching using port. Use this for remote debugging. 
+
+> [!IMPORTANT]
+> When attaching to ArcGIS Pro, the Python interpreter must first be initialized (a geoprocessing tool, the Python Window, 
+> or a notebook are opened). The debugger will not be able to attach until Python has initialized.
+
+> [!IMPORTANT]
+> When attaching using **Port**, the listening port must first be set on the remote Python process.
+> See [remote debugging](#remote-debugging) for detailed steps.
 ## Local Debugging
 
 Debug your scripts on your own machine as you develop your script tool.
@@ -176,10 +192,10 @@ Debug your script tool while it is running on another machine (of your coworker,
 
     **NOTE:** If successful, you should see something like `('123.0.0.4', 5678)` printed to the output. **IMPORTANT:** This is not the same as the IP address obtained earlier.  
 4. **Open VSC** _on the local machine_
-5. **Select the ArcGIS Pro Debugger configuration type:**  
+5. **Select the attachment mode:**  
     _On the local machine_  
     1. Press `Ctrl+Shift+P` to open the command palette  
-    2. Select **ArcGIS Pro Debugger: Select Configuration Type**  
+    2. Select **ArcGIS Pro Debugger: Set Attachment Mode**  
     3. Choose **Attach using Port**  
 
     **NOTE:** The default configuration is **Attach using Process ID**, this is recommended for local debugging. For remote debugging, **Attach using Port** is recommended.
@@ -316,7 +332,7 @@ The extension fails to attach to ArcGIS Pro with the following error message:
 
 This can happen if Python has not yet initialized in ArcGIS Pro, or the previous session was improperly disconnected. Try these:  
 * **Make sure Python has initialized:**  
-   In ArcGIS Pro, Python loads as needed (when a geoprocessing tool, the Python Window, or a Notebook are opened). The debugger will not be able to attach until Python has initialized.
+   In ArcGIS Pro, Python loads as needed (when a geoprocessing tool, the Python Window, or a notebook are opened). The debugger will not be able to attach until Python has initialized.
    1. Open the tool you are debugging, then try attaching again  
    
    **NOTE:** Opening any geoprocessing tool will cause Python to initialize. Alternatively, open either the Python Window or a Notebook.
