@@ -28,7 +28,7 @@ script tools for ArcGIS Pro.
     **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (bottom-right of VSC).  
     ![image](https://github.com/user-attachments/assets/bc52f17a-fe0e-42e6-b9d7-4f3f74dd8f99)  
 
-## Getting around
+## Getting Around
 
 The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your main point of entry into controlling the ArcGIS Pro Debugger.
 
@@ -53,7 +53,7 @@ Clicking the ArcGIS Pro Debugger item in the status bar will reveal available co
 
 You can alternatively reach these commands from the command palette by pressing `Ctrl+Shift+P` and searching for the command by name. Tip: Each command is prepended by **ArcGIS Pro Debugger**; You can list all relevant commands by using **ArcGIS Pro Debugger** as the search term.
 
-## ArcGIS Pro Debug mode
+## ArcGIS Pro Debug Mode
 
 ArcGIS Pro debug mode configures ArcGIS Pro for debugging.
 
