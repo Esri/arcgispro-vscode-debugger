@@ -230,7 +230,7 @@ Debug your script tool while it is running on another machine (of your coworker,
     **NOTE:** The drop-down list shows folders on the remote machine  
     2. Select the project folder containing the scripts you want to debug 
     3. If prompted, re-enter the password
-    4. If prompted, decide whether you trust the workspace and proceed accordingly
+    4. If prompted, decide whether you trust the authors of the workspace, and proceed accordingly (either accept or decline to open the workspace)
 
     **NOTE:** From the **Explorer** tab you will see the directory tree of the remote machine. You can open and edit scripts remotely.  
 
