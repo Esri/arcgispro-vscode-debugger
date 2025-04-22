@@ -59,32 +59,30 @@ ArcGIS Pro debug mode configures ArcGIS Pro for debugging.
 
 > [!IMPORTANT]  
 > The ArcGIS Pro debug mode must be enabled in order to successfully attach to ArcGIS Pro.
-
 1. **Open VSC**
-2. **Enable or Disable ArcGIS Pro Debug Mode**
+2. **Enable or Disable ArcGIS Pro Debug Mode**  
     1. Click the ArcGIS Pro status bar icon and select **Set ArcGIS Pro Debug Mode**
     3. Select **"ON"** if starting a new debugging session.  
        Select **"OFF"** if ending an existing debug session.  
+   
+    **NOTE:** A checkmark bubble on the ArcGIS Pro icon in the status bar indicates the debug mode is currently **ON**. You can also use the hover tooltip to confirm the current state.  
+    ![image](https://github.com/user-attachments/assets/c657b2c9-4e71-4aaf-9df7-f6e2800c5140)  
 
-       **NOTE:** A checkmark bubble on the ArcGIS Pro icon in the status bar indicates the debug mode is currently **ON**. You can also use the hover tooltip to confirm the current state.  
-       ![image](https://github.com/user-attachments/assets/c657b2c9-4e71-4aaf-9df7-f6e2800c5140)  
+    **NOTE:** Attaching to ArcGIS Pro will fail when "OFF".
 
-       **NOTE:** Attaching to ArcGIS Pro will fail when "OFF".
-
-       **NOTE:** While "ON", you may notice a decrease in performance of ArcGIS Pro. We recommend always setting to "OFF" when you are done debugging.
+    **NOTE:** While "ON", you may notice a decrease in performance of ArcGIS Pro. We recommend always setting to "OFF" when you are done debugging.
 
 ## Attachment Mode
 
 The attachment mode configures the ArcGIS Pro debugger extension to attach using either a process id or a port.
-
 1. **Open VSC**
-2. **Set the Attachment Mode**
+2. **Set the Attachment Mode**  
     1. Click the ArcGIS Pro status bar icon and select **Set Attachment Mode**
     2. Select **"Process ID"** if attaching using process id (default). Use this for local debugging.
-    4. Select **"Port"** if attaching using port. Use this for remote debugging.
-  
-       **NOTE:** When attached, the hover tooltip of the ArcGIS Pro status icon will additionally show the process or port attached to:
-       ![image](https://github.com/user-attachments/assets/f2322a4e-77e9-4572-ae08-cb2bde727dde)
+    4. Select **"Port"** if attaching using port. Use this for remote debugging.  
+
+    **NOTE:** When attached, the hover tooltip of the ArcGIS Pro status icon will additionally show the process or port attached to:
+    ![image](https://github.com/user-attachments/assets/f2322a4e-77e9-4572-ae08-cb2bde727dde)
 
 > [!IMPORTANT]
 > When attaching to ArcGIS Pro, the Python interpreter must first be initialized (a geoprocessing tool, the Python Window, 
