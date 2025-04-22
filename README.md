@@ -51,7 +51,7 @@ Clicking the ArcGIS Pro Debugger item in the status bar will reveal available co
 - **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
 - **Set ArcGIS Pro Debug Mode**: Set the [ArcGIS Pro debug mode](#arcgis-pro-debug-mode) to either **On** or **Off**.
 
-You can alternatively reach these commands from the command palette by pressing `Ctrl+Shift+P` and searching for the command by name. Tip: Each command is prepended by **ArcGIS Pro Debugger**; You can list all relevant commands by using **ArcGIS Pro Debugger** as the search term.
+You can alternatively reach these commands from the command palette by pressing `Ctrl+Shift+P` and searching for the command by name. Tip: Each command is prepended by **"ArcGIS Pro Debugger"**; You can list all relevant commands by using **"ArcGIS Pro Debugger"** as the search term.
 
 ## ArcGIS Pro Debug Mode
 
