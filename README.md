@@ -218,7 +218,7 @@ Debug your script tool while it is running on another machine (of your coworker,
     _On the local machine_  
     1. Click the Extensions tab and make sure the ArcGIS Pro Debugger extension components are installed on the SSH host  
 
-    **NOTE:** From the Extensions tab you will see extensions installed on the remote machine under the **SSH: \<hostname/IP> - INSTALLED** section. This tab will also show you extensions that are missing on the remote machine, make sure the required extensions are installed on the remote machine before proceeding (refer to the list of required extensions provided earlier). For the ArcGIS Pro Debugger extension item in the list, you may have to click on the **Install in SSH: \<hostname/IP>** to install required components. Make sure the versions match between the local and remote machines.
+    **NOTE:** From the Extensions tab you will see extensions installed on the remote machine under the **SSH: \<hostname/IP> - INSTALLED** section. This tab will also show you extensions that are missing on the remote machine, make sure the required extensions are installed on the remote machine before proceeding (refer to the list of required extensions provided earlier). For the ArcGIS Pro Debugger extension item in the list, you may have to click on the **Install in SSH: \<hostname/IP>** to install required components. Make sure the versions match between the local and remote machines.  
     ![image](https://github.com/user-attachments/assets/e3033916-a123-4b4c-b240-a2d1818fdc59)  
 9. **Open the remote project folder**:  
     _On the local machine_  
