@@ -43,12 +43,13 @@ Hovering over the status bar icon reveals at-a-glance details about the current 
 
 Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSC).
 
-![image](https://github.com/user-attachments/assets/ae422651-b799-43cd-83d4-5a80f567865a)
+![image](https://github.com/user-attachments/assets/3efef028-33f9-4973-a1d0-8aae4ea69872)
 
 - **Attach Debugger to ArcGIS Pro**: Attach the debugger to ArcGIS Pro. See [local debugging](#local-debugging) and [remote debugging](#remote-debugging) for usage.
 - **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
 - **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
 - **Set ArcGIS Pro Debug Mode**: Set the [ArcGIS Pro debug mode](#arcgis-pro-debug-mode) to either **On** or **Off**.
+- **Display ArcGIS Pro Properties:** Display properties of ArcGIS Pro, such as the Python environment currently active in ArcGIS Pro.
 
 You can alternatively reach these commands from the command palette by pressing `Ctrl+Shift+P` and searching for the command by name. Tip: Each command is prepended by **"ArcGIS Pro Debugger"**; You can list all relevant commands by using **"ArcGIS Pro Debugger"** as the search term.
 
