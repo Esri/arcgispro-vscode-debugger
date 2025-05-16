@@ -320,6 +320,8 @@ Python code in the script tool validation is embedded in the tool and needs to b
 
 ## Troubleshooting
 
+**NOTE:** Checking the output of running the **Display ArcGIS Pro Properties** command can be helpful when troubleshooting. It is best practice to ensure that the selected Python interpreter in VSC matches the active enironmnent in ArcGIS Pro.
+
 ### If the extension fails to attach to ArcGIS Pro
 The extension fails to attach to ArcGIS Pro with the following error message:  
 
