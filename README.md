@@ -250,7 +250,7 @@ by the extension.
 
     **NOTE:** You can alternatively click the **Python** element in the status bar (bottom) of VSC to select the interpreter.  
 
-    **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the Package Manager in ArcGIS Pro _on the remote machine_ to determine the active environment.
+    **NOTE:** Use the **Display ArcGIS Pro Properties** command to check which Python environment is currently active in ArcGIS Pro. Alternatively, use the **Package Manager** in ArcGIS Pro to determine the active environment.  
 12. **Set ArcGIS Debug Mode to "ON"**:
     1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
 13. **Open the Debug Console**: 
