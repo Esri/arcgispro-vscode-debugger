@@ -123,7 +123,7 @@ Debug your scripts on your own machine as you develop your script tool.
 
     **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
-    **NOTE:** It could be `arcgispro-py3` or a clone of it. Use the **Package Manager** in ArcGIS Pro to determine the active environment.
+    **NOTE:** Use the **Display ArcGIS Pro Properties** command to check which Python environment is currently active in ArcGIS Pro. Alternatively, use the **Package Manager** in ArcGIS Pro to determine the active environment.  
 6. **Set ArcGIS Debug Mode to "ON"**:
     1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
 7. **Set Attachment Mode to Process ID**
