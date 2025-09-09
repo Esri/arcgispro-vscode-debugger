@@ -94,6 +94,8 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** This will generate a `.vscode` folder in that workspace (if it is not already there). This folder will be populated with settings injected by the extension.  
 
     **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.  
+
+    **NOTE:** Opening a folder is required. Debugging will fail if opening a single file rather than a workspace.  
 4. **Open your script in VSC and set breakpoints**: 
     1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
     2. Set breakpoints as needed.
@@ -216,14 +218,16 @@ Debug your script tool while it is running on another machine (of your coworker,
     **NOTE:** This will generate a `.vscode` folder in that workspace (if it is not already there). This folder will be populated with settings injected 
 by the extension.  
 
-    **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.  
-10. **Open your script**:  
+    **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.
+
+   **NOTE:** Opening a folder is required. Debugging will fail if opening a single file rather than a workspace.  
+11. **Open your script**:  
     _On the local machine_  
     1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
     2. Set breakpoints as needed.
 
     **NOTE:** For script tools (`.atbx`), some additional setup might be required _on the remote machine_ to [debug execution code](#debug-script-tool-execution-code) or [validation code](#debug-script-tool-validation-code). No additional setup is required for python toolboxes (`.pyt`).  
-11. **Set Python interpreter**:  
+12. **Set Python interpreter**:  
     _On the local machine_  
     1. Press `Ctrl+Shift+P` to open the command palette
     2. Choose Python: Select Interpreter
@@ -232,13 +236,13 @@ by the extension.
     **NOTE:** You can alternatively click the **Python** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** Use the **Display ArcGIS Pro Properties** command to check which Python environment is currently active in ArcGIS Pro. Alternatively, use the **Package Manager** in ArcGIS Pro to determine the active environment.  
-12. **Open the Debug Console**: 
+13. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
     **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here.  
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
-13. **Attach to a running ArcGIS Pro instance using the debug port**:  
+14. **Attach to a running ArcGIS Pro instance using the debug port**:  
     _On the local machine_  
     1. Click the ArcGIS Pro status bar icon and select **Attach Debugger to ArcGIS Pro**  
     2. Enter the port number you chose in an earlier step  
@@ -252,13 +256,13 @@ by the extension.
     **NOTE:** Attaching will fail if the Python environment has not been initialized in ArcGIS Pro, as there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm). If you followed the steps above, the interpreter will have already been initialized when you opened the Python Window.
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
-14. **Run your script tool in ArcGIS Pro**:  
+15. **Run your script tool in ArcGIS Pro**:  
     _On the remote machine_  
     1. Open the tool you are debugging  
     2. Run the tool
 
     **NOTE:** Execution of the tool will stop when a breakpoint is hit, in the UI _on the remote machine_ it will appear to have gotten stuck.  
-15. **Debugging your script**:  
+16. **Debugging your script**:  
     _On the local machine_  
     1. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
