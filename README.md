@@ -35,42 +35,25 @@ The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your mai
 
 Hovering over the status bar icon reveals at-a-glance details about the current status of the debugger.
 
-![image](https://github.com/user-attachments/assets/81ff0d17-f8d3-4ef0-9711-28b222bd7b81)
+<img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/0bc3b730-abaf-4f55-bf8f-0b49f58cfb67" />
 
 - Click the **help** link on the top-right to get to the GitHub repository page you are reading from now.
-- **Debug Mode**: Indicates whether the [ArcGIS Pro debug mode](#arcgis-pro-debug-mode) is currently **On** or **Off**.
-- **Attachment Mode**: Indicates whether the [attachment mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to when attached.
+- **Attachment Mode**: Indicates whether the [attachment mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to while attached.
+
 
 Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSC).
 
-![image](https://github.com/user-attachments/assets/3efef028-33f9-4973-a1d0-8aae4ea69872)
+<img width="1918" height="1037" alt="image" src="https://github.com/user-attachments/assets/2aa38110-43ef-440d-942b-697753695522" />
 
 - **Attach Debugger to ArcGIS Pro**: Attach the debugger to ArcGIS Pro. See [local debugging](#local-debugging) and [remote debugging](#remote-debugging) for usage.
 - **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
 - **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
-- **Set ArcGIS Pro Debug Mode**: Set the [ArcGIS Pro debug mode](#arcgis-pro-debug-mode) to either **On** or **Off**.
 - **Display ArcGIS Pro Properties:** Display properties of ArcGIS Pro, such as the Python environment currently active in ArcGIS Pro.
 
 You can alternatively reach these commands from the command palette by pressing `Ctrl+Shift+P` and searching for the command by name. Tip: Each command is prepended by **"ArcGIS Pro Debugger"**; You can list all relevant commands by using **"ArcGIS Pro Debugger"** as the search term.
 
-## ArcGIS Pro Debug Mode
-
-ArcGIS Pro debug mode configures ArcGIS Pro for debugging.
-
-> [!IMPORTANT]  
-> The ArcGIS Pro debug mode must be enabled in order to successfully attach to ArcGIS Pro.
-1. **Open VSC**
-2. **Enable or Disable ArcGIS Pro Debug Mode**  
-    1. Click the ArcGIS Pro status bar icon and select **Set ArcGIS Pro Debug Mode**
-    3. Select **"ON"** if starting a new debugging session.  
-       Select **"OFF"** if ending an existing debug session.  
-   
-    **NOTE:** A checkmark bubble on the ArcGIS Pro icon in the status bar indicates the debug mode is currently **ON**. You can also use the hover tooltip to confirm the current state.  
-    ![image](https://github.com/user-attachments/assets/c657b2c9-4e71-4aaf-9df7-f6e2800c5140)  
-
-    **NOTE:** Attaching to ArcGIS Pro will fail when "OFF".
-
-    **NOTE:** While "ON", you may notice a decrease in performance of ArcGIS Pro. We recommend always setting to "OFF" when you are done debugging.
+> [!NOTE]
+> The **Debug Mode** option has been removed in the ArcGIS Pro Debugger extension version 1.1.0. Setting debug mode to "ON" was a requirement before attaching to ArcGIS Pro in version 1.0.0 of the extension; this step is now handled automatically in the background.
 
 ## Attachment Mode
 
@@ -124,15 +107,13 @@ Debug your scripts on your own machine as you develop your script tool.
     **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** Use the **Display ArcGIS Pro Properties** command to check which Python environment is currently active in ArcGIS Pro. Alternatively, use the **Package Manager** in ArcGIS Pro to determine the active environment.  
-6. **Set ArcGIS Debug Mode to "ON"**:
-    1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
-7. **Set Attachment Mode to Process ID**
+6. **Set Attachment Mode to Process ID**
     1. See [Attachment Mode](#attachment-mode)
-9. **Open the Debug Console**: 
+7. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
     **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here
-10. **Attach to a running ArcGIS Pro instance using process ID**:  
+8. **Attach to a running ArcGIS Pro instance using process ID**:  
     1. Click the ArcGIS Pro status bar icon and select **Attach Debugger to ArcGIS Pro**
     3. Select the ArcGIS Pro process from the dropdown  
     4. If you have multiple workspaces open in the Explorer tab, select the current workspace from the dropdown list.  
@@ -143,7 +124,7 @@ Debug your scripts on your own machine as you develop your script tool.
     ![image](https://github.com/user-attachments/assets/80488db9-31ba-4e11-878c-8de1aad2f924) 
 
     **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail. See [If the extension fails to attach to ArcGIS Pro](#if-the-extension-fails-to-attach-to-arcgis-pro) for more details.
-12. **Debugging your script**:  
+9. **Debugging your script**:  
     1. Run the `.atbx` or `.pyt` script from ArcGIS Pro. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
 ## Remote Debugging
@@ -251,15 +232,13 @@ by the extension.
     **NOTE:** You can alternatively click the **Python** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** Use the **Display ArcGIS Pro Properties** command to check which Python environment is currently active in ArcGIS Pro. Alternatively, use the **Package Manager** in ArcGIS Pro to determine the active environment.  
-12. **Set ArcGIS Debug Mode to "ON"**:
-    1. See [Enable ArcGIS Pro Debug mode](#enable-arcgis-pro-debug-mode)
-13. **Open the Debug Console**: 
+12. **Open the Debug Console**: 
     1. From the menu choose **View > Debug Console**.  
 
     **NOTE:** The debug console opens. Debug messages from the ArcGIS Pro debugger extension will appear here.  
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
-14. **Attach to a running ArcGIS Pro instance using the debug port**:  
+13. **Attach to a running ArcGIS Pro instance using the debug port**:  
     _On the local machine_  
     1. Click the ArcGIS Pro status bar icon and select **Attach Debugger to ArcGIS Pro**  
     2. Enter the port number you chose in an earlier step  
@@ -273,13 +252,13 @@ by the extension.
     **NOTE:** Attaching will fail if the Python environment has not been initialized in ArcGIS Pro, as there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm). If you followed the steps above, the interpreter will have already been initialized when you opened the Python Window.
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
-15. **Run your script tool in ArcGIS Pro**:  
+14. **Run your script tool in ArcGIS Pro**:  
     _On the remote machine_  
     1. Open the tool you are debugging  
     2. Run the tool
 
     **NOTE:** Execution of the tool will stop when a breakpoint is hit, in the UI _on the remote machine_ it will appear to have gotten stuck.  
-16. **Debugging your script**:  
+15. **Debugging your script**:  
     _On the local machine_  
     1. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
