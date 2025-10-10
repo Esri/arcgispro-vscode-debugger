@@ -7,10 +7,10 @@
 
 ## About the Extension
 
-This extension allows debugging ArcGIS Pro script tools (.atbx, .pyt) using Visual Studio Code (VSCode).
+This extension allows debugging ArcGIS Pro script tools (.atbx, .pyt) using Visual Studio Code (VSC).
 
-Our aim is to provide developers a seamless workflow to attach VSCode to the Python process live in 
-ArcGIS Pro. This integration allows developers to leverage VSCode's native Python debugging experience while developing
+Our aim is to provide developers a seamless workflow to attach VSC to the Python process live in 
+ArcGIS Pro. This integration allows developers to leverage VSC's native Python debugging experience while developing
 script tools for ArcGIS Pro.
 
 ## Features
@@ -20,16 +20,16 @@ script tools for ArcGIS Pro.
 
 ## Installation
 
-1. Install the latest ArcGIS Pro Debugger extension from the VSCode **Marketplace**:  
+1. Install the latest ArcGIS Pro Debugger extension from the VSC **Marketplace**:  
 2. After the extension is installed, you may need to reload Visual Studio Code to activate the extension.  
    You can do this by using the **Command Palette** (Ctrl+Shift+P) and selecting **Developer: Reload Window**.  
 
-    **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (bottom-right of VSCode).  
+    **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (bottom-right of VSC).  
     ![image](https://github.com/user-attachments/assets/bc52f17a-fe0e-42e6-b9d7-4f3f74dd8f99)  
 
 ## Getting Around
 
-The ArcGIS Pro Debugger item in the status bar (bottom-right of VSCode) is your main point of entry into controlling the ArcGIS Pro Debugger.
+The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your main point of entry into controlling the ArcGIS Pro Debugger.
 
 ![image](https://github.com/user-attachments/assets/1c6e2457-7748-439d-93bf-969765a177cf)
 
@@ -41,7 +41,7 @@ Hovering over the status bar icon reveals at-a-glance details about the current 
 - **Attachment Mode**: Indicates whether the [attachment mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to while attached.
 
 
-Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSCode).
+Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSC).
 
 <img width="1918" height="1037" alt="image" src="https://github.com/user-attachments/assets/2aa38110-43ef-440d-942b-697753695522" />
 
@@ -58,7 +58,7 @@ You can alternatively reach these commands from the command palette by pressing 
 ## Attachment Mode
 
 The attachment mode configures the ArcGIS Pro debugger extension to attach using either a process id or a port.
-1. **Open VSCode**
+1. **Open VSC**
 2. **Set the Attachment Mode**  
     1. Click the ArcGIS Pro status bar icon and select **Set Attachment Mode**
     2. Select **"Process ID"** if attaching using process id (default). Use this for local debugging.
@@ -80,24 +80,24 @@ The attachment mode configures the ArcGIS Pro debugger extension to attach using
 Debug your scripts on your own machine as you develop your script tool.
 
 > [!IMPORTANT]  
-> - Requires VSCode and the following additional extensions:
+> - Requires VSC and the following additional extensions:
 >    - ArcGIS Pro Debugger
 > - Requires ArcGIS Pro >= 3.5
 
 1. **Open your script tool in ArcGIS Pro**:
     1. Open your ArcGIS Pro project (.aprx)
     2. Open the tool you are debugging
-2. **Open VSCode**
-3. **Open your project folder in VSCode**:  
+2. **Open VSC**
+3. **Open your project folder in VSC**:  
     1. From the menu select **File** > **Open Folder**  
 
     **NOTE:** This will generate a `.vscode` folder in that workspace (if it is not already there). This folder will be populated with settings injected by the extension.  
 
-    **NOTE:** You must have read/write-permission to this workspace. You may need to start VSCode as administrator.  
+    **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.  
 
     **NOTE:** Opening a folder is required. Debugging will fail if opening a single file rather than a workspace.  
-4. **Open your script in VSCode and set breakpoints**: 
-    1. In VSCode, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
+4. **Open your script in VSC and set breakpoints**: 
+    1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
     2. Set breakpoints as needed.
 
     **NOTE:** For script tools (`.atbx`), some additional setup might be required to [debug execution code](#debug-script-tool-execution-code) or [validation code](#debug-script-tool-validation-code). No additional setup is required for python toolboxes (`.pyt`).
@@ -106,7 +106,7 @@ Debug your scripts on your own machine as you develop your script tool.
     2. Choose **Python: Select Interpreter**
     3. Select the currently active ArcGIS Python interpreter from the dropdown  
 
-    **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSCode to select the interpreter.  
+    **NOTE:** You can alternatively click the **Python Interpreter** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** Use the **Display ArcGIS Pro Properties** command to check which Python environment is currently active in ArcGIS Pro. Alternatively, use the **Package Manager** in ArcGIS Pro to determine the active environment.  
 6. **Set Attachment Mode to Process ID**
@@ -127,7 +127,7 @@ Debug your scripts on your own machine as you develop your script tool.
 
     **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail. See [If the extension fails to attach to ArcGIS Pro](#if-the-extension-fails-to-attach-to-arcgis-pro) for more details.
 9. **Debugging your script**:  
-    1. Run the `.atbx` or `.pyt` script from ArcGIS Pro. The execution will pause at the breakpoints set in VSCode, allowing you to debug the script.  
+    1. Run the `.atbx` or `.pyt` script from ArcGIS Pro. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
 ## Remote Debugging
 
@@ -135,12 +135,12 @@ Debug your script tool while it is running on another machine (of your coworker,
 
 > [!IMPORTANT]  
 > _On the local (client, initiating) machine_
-> - Requires VSCode and the following additional extensions:
+> - Requires VSC and the following additional extensions:
 >    - ArcGIS Pro Debugger
 > - Requires OpenSSH Client  
 >
 > _On the remote (host, target) machine_
-> - Requires VSCode and the following additional extensions:
+> - Requires VSC and the following additional extensions:
 >    - ArcGIS Pro Debugger
 > - Requires OpenSSH Server
 > - Requires ArcGIS Pro >= 3.5
@@ -176,7 +176,7 @@ Debug your script tool while it is running on another machine (of your coworker,
     **NOTE:** Replace `<port>` with an open port, for example, try `5678`.  
 
     **NOTE:** If successful, you should see something like `('123.0.0.4', 5678)` printed to the output. **IMPORTANT:** This is not the same as the IP address obtained earlier.  
-4. **Open VSCode** _on the local machine_
+4. **Open VSC** _on the local machine_
 5. **Set Attachment Mode to "Port"**:
     1. See [Attachment Mode](#attachment-mode)
 
@@ -193,10 +193,10 @@ Debug your script tool while it is running on another machine (of your coworker,
     3. Select the remote machine from the list  
     4. Select the remote machine operating system from the list  
 
-    **NOTE:** A separate VSCode instance may open, _**continue there with all steps going forward**_  
+    **NOTE:** A separate VSC instance may open, _**continue there with all steps going forward**_  
     5. Enter the password and press enter  
 
-    **NOTE:** Once connected, you will see SSH: <hostname/IP> on the lower left of the status bar. This instance (window) of VSCode is now accessing the remote machine.  
+    **NOTE:** Once connected, you will see SSH: <hostname/IP> on the lower left of the status bar. This instance (window) of VSC is now accessing the remote machine.  
 8. **Ensure all necessary components are installed on remote machine**  
     _On the local machine_  
     1. Click the Extensions tab and make sure the ArcGIS Pro Debugger extension components are installed on the SSH host  
@@ -218,12 +218,12 @@ Debug your script tool while it is running on another machine (of your coworker,
     **NOTE:** This will generate a `.vscode` folder in that workspace (if it is not already there). This folder will be populated with settings injected 
 by the extension.  
 
-    **NOTE:** You must have read/write-permission to this workspace. You may need to start VSCode as administrator.
+    **NOTE:** You must have read/write-permission to this workspace. You may need to start VSC as administrator.
 
    **NOTE:** Opening a folder is required. Debugging will fail if opening a single file rather than a workspace.  
 11. **Open your script**:  
     _On the local machine_  
-    1. In VSCode, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
+    1. In VSC, open the `.py` file associated with your `.atbx`, or the `.pyt` file, that you wish to debug.
     2. Set breakpoints as needed.
 
     **NOTE:** For script tools (`.atbx`), some additional setup might be required _on the remote machine_ to [debug execution code](#debug-script-tool-execution-code) or [validation code](#debug-script-tool-validation-code). No additional setup is required for python toolboxes (`.pyt`).  
@@ -233,7 +233,7 @@ by the extension.
     2. Choose Python: Select Interpreter
     3. Select the currently active ArcGIS Python interpreter (of the remote machine) from the dropdown  
 
-    **NOTE:** You can alternatively click the **Python** element in the status bar (bottom) of VSCode to select the interpreter.  
+    **NOTE:** You can alternatively click the **Python** element in the status bar (bottom) of VSC to select the interpreter.  
 
     **NOTE:** Use the **Display ArcGIS Pro Properties** command to check which Python environment is currently active in ArcGIS Pro. Alternatively, use the **Package Manager** in ArcGIS Pro to determine the active environment.  
 13. **Open the Debug Console**: 
@@ -264,7 +264,7 @@ by the extension.
     **NOTE:** Execution of the tool will stop when a breakpoint is hit, in the UI _on the remote machine_ it will appear to have gotten stuck.  
 16. **Debugging your script**:  
     _On the local machine_  
-    1. The execution will pause at the breakpoints set in VSCode, allowing you to debug the script.  
+    1. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
 ## Debug Script Tool Execution Code
 
@@ -303,7 +303,7 @@ Python code in the script tool validation is embedded in the tool and needs to b
 
 ## Troubleshooting
 
-**NOTE:** Checking the output of running the **Display ArcGIS Pro Properties** command can be helpful when troubleshooting. It is best practice to ensure that the selected Python interpreter in VSCode matches the active enironmnent in ArcGIS Pro.
+**NOTE:** Checking the output of running the **Display ArcGIS Pro Properties** command can be helpful when troubleshooting. It is best practice to ensure that the selected Python interpreter in VSC matches the active enironmnent in ArcGIS Pro.
 
 ### If the extension fails to attach to ArcGIS Pro
 The extension fails to attach to ArcGIS Pro with the following error message:  
