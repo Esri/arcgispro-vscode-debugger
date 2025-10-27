@@ -13,6 +13,21 @@ Our aim is to provide developers a seamless workflow to attach VSC to the Python
 ArcGIS Pro. This integration allows developers to leverage VSC's native Python debugging experience while developing
 script tools for ArcGIS Pro.
 
+## What's New
+ 
+### Version 1.1.0
+ 
+**Streamlined Debugging Experience**
+- **Streamlined Attach**: Debug Mode setting removed - simply attach and start debugging immediately without additional configuration steps.
+- **Multi-Workspace Support**: Work with multiple workspaces simultaneously and select the appropriate workspace when attaching to ArcGIS Pro
+ 
+**Improved User Feedback**
+- **Enhanced Messaging**: Clear, informative messages throughout the extension to guide you through the debugging process
+- **Better Workspace Validation**: Improved detection and helpful feedback when a folder workspace is required but not open
+- **Detailed Process List**: ArcGIS Pro processes now display with associated project details, making it easier to attach to the correct instance
+ 
+These improvements make debugging ArcGIS Pro script tools faster and more intuitive, reducing setup time and helping you identify issues more quickly.
+
 ## Features
 - Easily attach to ArcGIS Pro and stand-alone Python processes
 - Debug ArcGIS Pro Script Tools (.atbx) and Python Toolboxes (.pyt)
