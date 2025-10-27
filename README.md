@@ -20,12 +20,16 @@ script tools for ArcGIS Pro.
 
 ## Installation
 
-1. Install the latest ArcGIS Pro Debugger extension from the VSC **Marketplace**:  
-2. After the extension is installed, you may need to reload Visual Studio Code to activate the extension.  
-   You can do this by using the **Command Palette** (Ctrl+Shift+P) and selecting **Developer: Reload Window**.  
+1. Install the latest ArcGIS Pro Debugger extension from the VSC **Marketplace**:
+2. To activate the extension, open a project workspace containing .pyt(s) or atbx(s) you'd like to debug.
 
-    **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (bottom-right of VSC).  
-    ![image](https://github.com/user-attachments/assets/bc52f17a-fe0e-42e6-b9d7-4f3f74dd8f99)  
+      **Note:** An **ArcGIS Pro Debugger** item will appear in the status bar (bottom-right of VSC).  
+   
+      <img width="170" height="34" alt="image" src="https://github.com/user-attachments/assets/24216e8f-0ef7-48ae-ab0b-c8445d8b81ef" /> 
+   
+      If you do not see it, make sure you have opened a project workspace containing .pyt(s) or .atbx(s). You may need to reload Visual Studio Code to activate the extension. 
+      You can do this by using the **Command Palette** (Ctrl+Shift+P) and selecting **Developer: Reload Window**.  
+
 
 ## Getting Around
 
