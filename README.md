@@ -54,15 +54,15 @@ The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your mai
 
 Hovering over the status bar icon reveals at-a-glance details about the current status of the debugger.
 
-<img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/0bc3b730-abaf-4f55-bf8f-0b49f58cfb67" />
+<img width="447" height="176" alt="image" src="https://github.com/user-attachments/assets/9edb2f22-b037-4fcd-b09a-7e8fa341fbaa" />
 
-- Click the **help** link on the top-right to get to the GitHub repository page you are reading from now.
+- Click the **help** link on the top-right to get to the documentation you are reading from now.
 - **Attachment Mode**: Indicates whether the [attachment mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to while attached.
 
 
-Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-middle of VSC).
+Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-center of VSC).
 
-<img width="1918" height="1037" alt="image" src="https://github.com/user-attachments/assets/2aa38110-43ef-440d-942b-697753695522" />
+<img width="756" height="237" alt="image" src="https://github.com/user-attachments/assets/3886cd8a-4c6a-46f7-b07f-8748b1cb6280" />
 
 - **Attach Debugger to ArcGIS Pro**: Attach the debugger to ArcGIS Pro. See [local debugging](#local-debugging) and [remote debugging](#remote-debugging) for usage.
 - **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
@@ -84,7 +84,7 @@ The attachment mode configures the ArcGIS Pro debugger extension to attach using
     4. Select **"Port"** if attaching using port. Use this for remote debugging.  
 
     **NOTE:** When attached, the hover tooltip of the ArcGIS Pro status icon will additionally show the process or port attached to:
-    ![image](https://github.com/user-attachments/assets/f2322a4e-77e9-4572-ae08-cb2bde727dde)
+    <img width="362" height="97" alt="image" src="https://github.com/user-attachments/assets/8b53d1f4-7e3b-4610-9d11-d8dfff7049c6" />
 
 > [!IMPORTANT]
 > When attaching to ArcGIS Pro, the Python interpreter must first be initialized (a geoprocessing tool, the Python Window, 
