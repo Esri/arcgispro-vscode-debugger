@@ -35,7 +35,7 @@ These improvements make debugging ArcGIS Pro script tools faster and more intuit
 
 ## Installation
 
-1. Install the latest ArcGIS Pro Debugger extension from the VSC **Marketplace**:
+1. Install the latest [ArcGIS Pro Debugger extension from the VSC **Marketplace**](https://marketplace.visualstudio.com/items?itemName=Esri.arcgis-pro-debugger):
 2. To activate the extension, open a project workspace containing .pyt(s) or atbx(s) you'd like to debug.
 
       **Note:** An **ArcGIS Pro Debugger** item will appear in the status bar (bottom-right of VSC).  
