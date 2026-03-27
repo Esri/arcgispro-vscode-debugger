@@ -10,6 +10,6 @@ blank_issues_enabled: false
 #     url: https://github.com/<org>/<repo>/discussions
 #     about: For how-to questions, use Discussions instead of issues.  
 
-# # Optional:
-# # Add default labels that are added to every issue if no template is chosen
-# default_labels: ["question"]
+# Optional:
+# Add default labels that are added to every issue if no template is chosen
+default_labels: ["question"]
