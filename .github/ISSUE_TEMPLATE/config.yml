@@ -1,6 +1,6 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GitHub Community Support
-    url: https://github.com/orgs/community/discussions
+  - name: Esri Community Support
+    url: https://community.esri.com/t5/tag/python/tg-p/board-id/arcgis-pro-questions
     about: Please ask and answer questions here.
 
