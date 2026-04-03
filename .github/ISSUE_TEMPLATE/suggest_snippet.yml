@@ -1,0 +1,75 @@
+name: Suggest a Snippet
+description: "Suggest a code snippet to be added to the extension (ArcPy snippets collection)"
+title: "[Feature]: "
+labels: ["enhancement"]
+type: "feature"
+body:
+  - type: markdown
+    attributes:
+      value: "Suggest a snippet to be added to the extension. Please provide as much information as possible to help us understand and evaluate your suggestion."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Describe the problem"
+      description: "Clear and concise description of what the problem is"
+      placeholder: |
+        When I want to do X, I have to write Y, which is cumbersome and time-consuming...
+
+        If applicable, add screenshots to help explain your problem.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Describe how this snippet would solve the problem"
+      description: "Clear and concise description of how the suggested snippet would solve the problem described above."
+      placeholder: |
+        I suggest a snippet to do X...
+
+        If applicable, add screenshots or mockups to illustrate.
+    validations:
+      required: true
+  - type: textarea
+    id: snippet
+    attributes:
+      label: "Snippet"
+      description: |
+        Suggested code snippet to be added.
+
+        We follow VS Code snippet JSON format.
+        
+        Each snippet entry is an object, the snippet syntax follows the 
+        TextMate snippet syntax with exceptions, see https://code.visualstudio.com/docs/editing/userdefinedsnippets.
+      placeholder: |
+       "Walk Workspace": {
+          "prefix": "arcpy-walk",
+          "body": [
+            "for dirpath, dirnames, filenames in arcpy.da.Walk(${1:workspace_path}, datatype=\"${2|Any,CadDrawing,FeatureClass,RasterDataset,GeometricNetwork,LasDataset,Layer,Locator,Map,MosaicDataset,NetworkDataset,ParcelDataset,RasterCatalog,RasterDataset,RelationshipClass,RepresentationClass,Table,Terrain,Tin,Tool,Topology,UtilityNetwork|}\", type=\"${3|ANY,POINT,MULTIPOINT,POLYLINE,POLYGON,MULTIPATCH,BIL,BIP,BMP,BSQ,DAT,GIF,GRID,IMG,JP2,JPG,PNG,TIF|}\"):",
+            "    for filename in filenames:",
+            "        # Process each file",
+            "        ${4:print(os.path.join(dirpath, filename))}",
+            "$0"
+          ],
+          "description": "Walk through a workspace"
+        }
+    validations:
+      required: true
+  - type: textarea
+    id: alternative-solutions
+    attributes:
+      label: "Describe alternatives you've considered"
+      description: "A clear and concise description of any alternative solutions or workarounds you've considered."
+      placeholder: |
+        Other possible solutions include...
+
+        If applicable, add screenshots or mockups to illustrate.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Additional context"
+      description: "Include as much additional information as possible, such as related issues, etc. Anything that might be relevant."
+      placeholder: "Also..."
+    validations:
+      required: false
