@@ -1,7 +1,7 @@
 name: Suggest a Snippet
 description: "Suggest a code snippet to be added to the extension (ArcPy snippets collection)"
 title: "[Feature]: "
-labels: ["feature"]
+labels: ["enhancement"]
 type: "feature"
 body:
   - type: markdown
