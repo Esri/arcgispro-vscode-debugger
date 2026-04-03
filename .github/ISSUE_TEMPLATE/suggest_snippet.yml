@@ -51,7 +51,7 @@ body:
             "$0"
           ],
           "description": "Walk through a workspace"
-        },
+        }
     validations:
       required: true
   - type: textarea
