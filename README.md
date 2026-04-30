@@ -67,6 +67,8 @@ You can alternatively reach these commands from the command palette by pressing 
 
 The ArcGIS Toolboxes pane (accessed from the activity pane on the left side of VSC) allows you to explore toolboxes in the current workspace as well as find help and feedback.
 
+<img width="463" height="467" alt="image" src="https://github.com/user-attachments/assets/f2b66f37-7cf4-4257-936a-95fa3f86544b" />
+
 ## Attachment Mode
 
 The attachment mode configures the ArcGIS Pro debugger extension to attach using either a process id or a port.
@@ -88,7 +90,6 @@ The attachment mode configures the ArcGIS Pro debugger extension to attach using
 ## Local Debugging
 
 Debug your scripts on your own machine as you develop your script tool.
-
 
 > ***IMPORTANT***
 > - *Requires VSC and the following additional extensions:*
