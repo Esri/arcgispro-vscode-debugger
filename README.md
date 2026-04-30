@@ -326,11 +326,27 @@ Python code in the script tool validation is embedded in the tool and needs to b
 4. Continue debugging using the validation_code.py file.
 5. When you are done debugging, replace the contents of the code editor in the tool properties dialog Validation tab with those of your Python file (validation_code.py in the sample code) i.e. return things to their original state.
 
-## ArcGIS Toolboxes Pane
-
-
-
 ## Manage ArcPy Code Snippets
+
+ArcPy code snippets are managed the same way Visual Studio Code user defined code snippets are, but in a dedicated arcpy.json file. To manage your custom ArcPy snippets, choose the **Configure ArcPy Snippets** command from the ArcGIS Pro commands drop-down. Snippets follow the TextMate snippet syntax with exceptions, see [Visual Studio Code's documentation for user defined code snippets](https://code.visualstudio.com/docs/editing/userdefinedsnippets). For example:
+
+``` json
+{
+"Search Cursor": {
+    "prefix": "arcpy-search",
+    "body": [
+      "with arcpy.da.SearchCursor(${1:feature_class}, [\"${2:field1}\", $3]) as cursor:",
+      "    for row in cursor:",
+      "        # Process row data",
+      "        ${4:print(row[0])}",
+      "$0"
+    ],
+    "description": "Create a search cursor"
+  }
+}
+```
+
+ArcPy code snippets are available from the **Insert ArcPy Snippet** command (ArcGIS Pro commands drop-down). All ArcPy snippets are also available as Intellisense suggestions when typing, and from the Command Pallette's standard **Insert Snippet** command.
 
 ## Troubleshooting
 
