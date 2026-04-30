@@ -18,9 +18,9 @@
     Instantly insert battle-tested ArcPy code patterns without leaving your editor.
     - Ctrl+Alt+S — open the snippet picker from anywhere in a Python file
     - Covers common patterns including:
-    - Feature class and table operations
-    - Spatial reference and geometry helpers
-    - Cursor patterns (Search, Insert, Update)
+        - Feature class and table operations
+        - Spatial reference and geometry helpers
+        - Cursor patterns (Search, Insert, Update)
     - Save your own snippets — select any code block and save it as a custom snippet via Save Selection as Custom Snippet
 
 ### Other
