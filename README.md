@@ -69,6 +69,10 @@ The ArcGIS Toolboxes pane (accessed from the activity pane on the left side of V
 
 <img width="463" height="467" alt="image" src="https://github.com/user-attachments/assets/f2b66f37-7cf4-4257-936a-95fa3f86544b" />
 
+- **TOOLBOXES**: Browse toolboxes in the current workspace and view their contents.
+- **STATISTICS**: See tool and toolbox counts at-a-glance.
+- **HELP AND FEEDBACK**: Access helpful resources.
+
 ## Attachment Mode
 
 The attachment mode configures the ArcGIS Pro debugger extension to attach using either a process id or a port.
