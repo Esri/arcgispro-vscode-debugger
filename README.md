@@ -48,7 +48,6 @@ Hovering over the status bar icon reveals at-a-glance details about the current 
 - Click the **help** link on the top-right to get to the documentation you are reading from now.
 - **Attachment Mode**: Indicates whether the [attachment mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to while attached.
 
-
 Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-center of VSC).
 
 <img width="614" height="235" alt="image" src="https://github.com/user-attachments/assets/fe65b7b9-378d-4d3c-a3d6-3dc88cf039a8" />
@@ -57,14 +56,16 @@ Clicking the ArcGIS Pro Debugger item in the status bar will reveal available co
 - **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
 - **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
 - **Display ArcGIS Pro Properties:** Display properties of ArcGIS Pro, such as the Python environment currently active in ArcGIS Pro.
-- **Insert ArcPy Snippet**: Browse and insert code ArcPy snippets.
-- **Configure ArcPy Snippets**: Open arcpy.json to add, edit, or delete your own custom snippets.
-- **Show Toolbox Explorer**: Open the ArcGIS Toolbox Explorer pane to browse toolboxes.
+- **Insert ArcPy Snippet**: Browse and insert ArcPy code snippets.
+- **Configure ArcPy Snippets**: Open arcpy.json to add, edit, or delete your custom snippets.
+- **Show Toolbox Explorer**: Open the ArcGIS Toolbox Explorer pane to view toolboxes in your workspace.
 - **Create New Toolbox**: Create a new Python Toolbox (.pyt).
 
 You can alternatively reach these commands from the command palette by pressing `Ctrl+Shift+P` and searching for the command by name. Tip: Each command is prepended by **"ArcGIS Pro Debugger"**; You can list all relevant commands by using **"ArcGIS Pro Debugger"** as the search term.
 
 > ****NOTE***: The **Debug Mode** option has been removed in the ArcGIS Pro Debugger extension version 1.1.0. Setting debug mode to "ON" was a requirement before attaching to ArcGIS Pro in version 1.0.0 of the extension; this step is now handled automatically in the background.*
+
+The ArcGIS Toolboxes pane (accessed from the activity pane on the left side of VSC) allows you to explore toolboxes in the current workspace as well as find help and feedback.
 
 ## Attachment Mode
 
@@ -319,6 +320,12 @@ Python code in the script tool validation is embedded in the tool and needs to b
     ```
 4. Continue debugging using the validation_code.py file.
 5. When you are done debugging, replace the contents of the code editor in the tool properties dialog Validation tab with those of your Python file (validation_code.py in the sample code) i.e. return things to their original state.
+
+## ArcGIS Toolboxes Pane
+
+
+
+## Manage ArcPy Code Snippets
 
 ## Troubleshooting
 
