@@ -16,8 +16,8 @@ script tools for ArcGIS Pro.
 - Easily attach to ArcGIS Pro and stand-alone Python processes
 - Debug ArcGIS Pro Script Tools (.atbx) and Python Toolboxes (.pyt)
 - Debug code on the local machine or remotely on a different machine
-- Explore toolboxes
-- Custom code snippets
+- Explore toolboxes in your workspace with the ArcGIS Toolboxes pane
+- Insert and manage custom ArcPy code snippets
 
 ## What's New
 
@@ -34,7 +34,6 @@ Looking for what's new? View the [changelog](changelog) for complete details.
    
       If you are using the extension for the first time, you may need to reload Visual Studio Code to activate the extension. 
       You can do this by using the **Command Palette** (Ctrl+Shift+P) and selecting **Developer: Reload Window**.  
-
 
 ## Getting Around
 
