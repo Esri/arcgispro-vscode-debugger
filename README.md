@@ -56,8 +56,8 @@ Clicking the ArcGIS Pro Debugger item in the status bar will reveal available co
 - **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
 - **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
 - **Display ArcGIS Pro Properties:** Display properties of ArcGIS Pro, such as the Python environment currently active in ArcGIS Pro.
-- **Insert ArcPy Snippet**: Browse and insert ArcPy code snippets.
-- **Configure ArcPy Snippets**: Open arcpy.json to add, edit, or delete your custom snippets.
+- **Insert ArcPy Snippet**: Browse and insert ArcPy code snippets. See [access and manage arcpy code snippets](#access-and-manage-arcpy-code-snippets) for usage.
+- **Configure ArcPy Snippets**: Open arcpy.json to add, edit, or delete your custom snippets. See [access and manage arcpy code snippets](#access-and-manage-arcpy-code-snippets) for usage.
 - **Show Toolbox Explorer**: Open the ArcGIS Toolbox Explorer pane to view toolboxes in your workspace.
 - **Create New Toolbox**: Create a new Python Toolbox (.pyt).
 
