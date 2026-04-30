@@ -330,14 +330,9 @@ Python code in the script tool validation is embedded in the tool and needs to b
 
 ### Insert Snippets
 
-ArcPy code snippets are templates for common code patterns that can be inserted into your code to reduce typing. There are many built-in ArcPy code snippets, but custom code snippets can also be created. To insert ArcPy code snippets:
+ArcPy code snippets are templates for common code patterns that can be inserted into your code to reduce typing. There are many built-in ArcPy code snippets, but custom code snippets can also be created. 
 
-1. Place the cursor on an empty line in your file.
-2. Click the ArcGIS Pro status bar icon and select **Insert ArcPy Snippet**.
-3. Choose a code snippet from the drop-down list of built-in and custom ArcPy snippets.
-4. Use the tab key to navigate and edit predefined placeholder values in the snippet.
-
-All ArcPy snippets are also available as Intellisense suggestions when typing, and from the Command Pallette's standard **Insert Snippet** command.
+To insert ArcPy code snippets, place the cursor on an empty line in your file and then click the ArcGIS Pro status bar icon and select **Insert ArcPy Snippet**. Alternatively, all ArcPy snippets are also available as Intellisense suggestions when typing, and from the Command Pallette's standard **Insert Snippet** command.
 
 ### Manage Custom Snippets
 
