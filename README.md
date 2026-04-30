@@ -117,6 +117,7 @@ Debug your scripts on your own machine as you develop your script tool.
     2. Set breakpoints as needed.
 
     ***NOTE:** For script tools (`.atbx`), some additional setup might be required to [debug execution code](#debug-script-tool-execution-code) or [validation code](#debug-script-tool-validation-code). No additional setup is required for python toolboxes (`.pyt`).*
+
 5. **Set Python interpreter**:
     1. Press `Ctrl+Shift+P` to open the command palette
     2. Choose **Python: Select Interpreter**
@@ -427,6 +428,13 @@ def execute_subprocess(script_path: str) -> str:
 subproc_file = os.path.join(os.getcwd(), "subproc.py")
 arcpy.AddMessage(execute_subprocess(subproc_file))
 ```
+
+### If breakpoints on `if __name__ == "__main__":` don't catch
+You've set a breakpoint on the line `if __name__ == "__main__":` but the debugger never stops there.
+
+* **Move the breakpoint into the code block and try again.**  
+This is a known issue and won't be fixed due to the underlying architecture of toolboxes. Avoid placing breakpoints directly on the line `if __name__ == "__main__":`, and place them within the code block beneath instead.
+
 
 ## Issues
 
