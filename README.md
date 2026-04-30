@@ -56,8 +56,8 @@ Clicking the ArcGIS Pro Debugger item in the status bar will reveal available co
 - **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
 - **Set Attachment Mode**: Set the [attachment mode](#attachment-mode) to either **Process ID** or **Port**.
 - **Display ArcGIS Pro Properties:** Display properties of ArcGIS Pro, such as the Python environment currently active in ArcGIS Pro.
-- **Insert ArcPy Snippet**: Browse and insert ArcPy code snippets. See [access and manage arcpy code snippets](#access-and-manage-arcpy-code-snippets) for usage.
-- **Configure ArcPy Snippets**: Open arcpy.json to add, edit, or delete your custom snippets. See [access and manage arcpy code snippets](#access-and-manage-arcpy-code-snippets) for usage.
+- **Insert ArcPy Snippet**: Browse and insert ArcPy code snippets. See [insert snippets](#insert-snippets) for usage.
+- **Configure ArcPy Snippets**: Open arcpy.json to add, edit, or delete your custom snippets. See [manage custom snippets](#manage-custom-snippets) for usage.
 - **Show Toolbox Explorer**: Open the ArcGIS Toolbox Explorer pane to view toolboxes in your workspace.
 - **Create New Toolbox**: Create a new Python Toolbox (.pyt).
 
@@ -326,11 +326,22 @@ Python code in the script tool validation is embedded in the tool and needs to b
 4. Continue debugging using the validation_code.py file.
 5. When you are done debugging, replace the contents of the code editor in the tool properties dialog Validation tab with those of your Python file (validation_code.py in the sample code) i.e. return things to their original state.
 
-## Access and Manage ArcPy Code Snippets
+## ArcPy Code Snippets
 
-ArcPy code snippets are available from the **Insert ArcPy Snippet** command (ArcGIS Pro commands drop-down). All ArcPy snippets are also available as Intellisense suggestions when typing, and from the Command Pallette's standard **Insert Snippet** command.
+### Insert Snippets
 
-ArcPy code snippets are managed the same way Visual Studio Code user defined code snippets are, but in a dedicated arcpy.json file. To manage your custom ArcPy snippets:
+ArcPy code snippets are templates for common code patterns that can be inserted into your code to reduce typing. There are many built-in ArcPy code snippets, but custom code snippets can also be created. To insert ArcPy code snippets:
+
+1. Place the cursor on an empty line in your file.
+2. Click the ArcGIS Pro status bar icon and select **Insert ArcPy Snippet**.
+3. Choose a code snippet from the drop-down list of built-in and custom ArcPy snippets.
+4. Use the tab key to navigate and edit predefined placeholder values in the snippet.
+
+All ArcPy snippets are also available as Intellisense suggestions when typing, and from the Command Pallette's standard **Insert Snippet** command.
+
+### Manage Custom Snippets
+
+Custom ArcPy code snippets are managed the same way Visual Studio Code user defined code snippets are, but in a dedicated arcpy.json file. To manage your custom ArcPy snippets:
 
 1. Click the ArcGIS Pro status bar icon and select **Configure ArcPy Snippets**.
 
