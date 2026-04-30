@@ -44,7 +44,7 @@ The ArcGIS Pro Debugger item in the status bar (bottom-right of VSC) is your mai
 
 Hovering over the status bar icon reveals at-a-glance details about the current status of the debugger.
 
-![alt text](image-2.png)
+<img width="350" height="101" alt="image" src="https://github.com/user-attachments/assets/1aaa7000-8f47-4504-8d5f-5ea00fb5a1ec" />
 
 - Click the **help** link on the top-right to get to the documentation you are reading from now.
 - **Attachment Mode**: Indicates whether the [attachment mode](#attachment-mode) is currently **Process ID** or **Port**. This will also show the process or port currently attached to while attached.
@@ -52,7 +52,7 @@ Hovering over the status bar icon reveals at-a-glance details about the current 
 
 Clicking the ArcGIS Pro Debugger item in the status bar will reveal available commands (a dropdown will appear at the top-center of VSC).
 
-![alt text](image.png)
+<img width="614" height="235" alt="image" src="https://github.com/user-attachments/assets/fe65b7b9-378d-4d3c-a3d6-3dc88cf039a8" />
 
 - **Attach Debugger to ArcGIS Pro**: Attach the debugger to ArcGIS Pro. See [local debugging](#local-debugging) and [remote debugging](#remote-debugging) for usage.
 - **Remote Development**: Set an SSH host and make an SSH connection to the remote machine. See [remote debugging](#remote-debugging) for usage.
