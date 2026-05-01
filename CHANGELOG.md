@@ -1,4 +1,4 @@
-# 1.2.7
+# 1.2.3
 
 ### Features
 - Added a toolbox explorer pane:  
