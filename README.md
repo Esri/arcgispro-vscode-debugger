@@ -21,7 +21,7 @@ script tools for ArcGIS Pro.
 
 ## What's New
 
-Looking for what's new? View the [changelog](changelog) for complete details.
+Looking for what's new? View the [changelog](./CHANGELOG.md) for complete details.
 
 ## Installation
 
